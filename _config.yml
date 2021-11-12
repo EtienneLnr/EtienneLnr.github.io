@@ -73,7 +73,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "lenaour@poleia.lip6.fr"
-    - label: "Instagram"
     
 defaults:
   # _posts
