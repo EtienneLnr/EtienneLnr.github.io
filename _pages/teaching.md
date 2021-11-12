@@ -1,5 +1,5 @@
 ---
-permalink: /Teaching/
+permalink: /teaching/
 title: "Teaching"
 ---
 
@@ -11,4 +11,4 @@ I'm a teaching assistant at [ENSAE PARIS](https://www.ensae.fr/)
 
 [Numerical analysis and applications](https://www.ensae.fr/courses/analyse-numerique-et-applications/)
 
-1st Yea
+1st Year
