@@ -1,7 +1,7 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Publications"
-    url: /publications/
+  - title: "Research
+    url: /research/
   - title: "Teaching"
     url: /teaching/
