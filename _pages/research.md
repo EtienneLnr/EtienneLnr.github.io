@@ -1,6 +1,6 @@
 ---
-permalink: /publications/
-title: "Publications"
+permalink: /research/
+title: "Research"
 ---
 
 No publications available at this time
