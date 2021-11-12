@@ -14,19 +14,21 @@ minimal_mistakes_skin : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Etienne Le Naour
+title: Etienne Le Naour website
 email: lenaour[at]poleia.lip6.fr
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: Personal website of Etienne Le Naour. Contents on representation learning and transfer learning of time series.
 masthead_title: "Home"
 github_username: EtienneLnr
 
 search: true
 
+
 # Build settings
 markdown: kramdown
+highlighter         : bleu
+lsi                 : false
+excerpt_separator   : "\n\n"
+incremental         : false
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -75,6 +77,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "lenaour@poleia.lip6.fr"
+      - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "www.linkedin.com/in/etienne-le-naour-913248156"
     
 defaults:
   # _posts
