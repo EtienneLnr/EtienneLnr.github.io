@@ -74,12 +74,12 @@ author:
 
 footer:
   links:
-      - label: "GitHub"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://etiennelnr.github.io/test_website.github.io"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/EtienneLnr"
-      - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "www.linkedin.com/in/etienne-le-naour-913248156"
     
 defaults:
   # _posts
