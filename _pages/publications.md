@@ -1,3 +1,4 @@
+---
 permalink: /publications/
 title: "Publications"
 ---
