@@ -70,13 +70,13 @@ author:
       url: "https://etiennelnr.github.io/test_website.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "lenaour@poleia.lip6.fr"
+      url: "https://github.com/EtienneLnr"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "lenaour@poleia.lip6.fr"
+      url: "https://github.com/EtienneLnr"
       - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "www.linkedin.com/in/etienne-le-naour-913248156"
