@@ -68,11 +68,11 @@ plugins:
 author:
   name   : "Etienne Le Naour"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "I am a PhD student working on neural representation learning for time series."
+  bio : "I am a PhD student working on neural representation learning for time series."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://etiennelnr.github.io"
+      url: "https://etiennelnr.github.com
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/EtienneLnr"
@@ -81,7 +81,7 @@ footer:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://etiennelnr.github.io"
+      url: "https://etiennelnr.github.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/EtienneLnr"
