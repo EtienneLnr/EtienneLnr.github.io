@@ -63,7 +63,7 @@ plugins:
 author:
   name   : "Etienne Le Naour"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "I am a PhD student working on representation learning and transfer  learning for time series using deep learning methods."
+  bio    : "I am a PhD student working on neural representation learning for time series."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
