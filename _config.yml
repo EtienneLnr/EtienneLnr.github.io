@@ -14,6 +14,8 @@ minimal_mistakes_skin : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+theme: minimal-mistakes-jekyll
+
 title: Etienne Le Naour website
 email: lenaour[at]poleia.lip6.fr
 description: Personal website of Etienne Le Naour. Contents on representation learning and transfer learning of time series.
@@ -29,7 +31,10 @@ highlighter         : bleu
 lsi                 : false
 excerpt_separator   : "\n\n"
 incremental         : false
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mistakes/minimal-mistakes
+
+
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
