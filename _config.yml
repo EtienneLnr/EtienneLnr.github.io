@@ -31,7 +31,7 @@ highlighter         : bleu
 lsi                 : false
 excerpt_separator   : "\n\n"
 incremental         : false
-remote_theme: mistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes"
 
 
 
