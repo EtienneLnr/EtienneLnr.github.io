@@ -61,7 +61,7 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "PhD in Deep Learning. I am currently working as a research scientist at EDF R&D"
   links:
-    - label: "Scholar"
+    - label: "Google Scholar"
       icon: "fas fa-fw fa-link"
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
