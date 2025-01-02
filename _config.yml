@@ -29,9 +29,10 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: Europe/Paris # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Paris 
 
 include:
+  - .htaccess
   - _pages
 
 # Exclude from processing.
@@ -62,13 +63,13 @@ plugins:
 author:
   name   : "Etienne Le Naour"
   avatar : "/assets/images/bio.jpeg"
-  bio    : "PhD in Deep Learning. I am currently working as a research scientist at EDF R&D"
+  bio    : "PhD in Deep Learning."
   links:
     - label: "etienne.le-naour[at]edf.fr"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:etienne.le-naour_at_edf.fr?body=Replace _at_ with @"
     - label: "Google Scholar"
-      icon: "ai ai-fw ai-google-scholar"
+      icon: "fas fa-fw fa-link"
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -76,6 +77,9 @@ author:
     - label: "Resume"
       icon: "fab fa-fw fa-envira"
       url: 
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/etienne-le-naour/"
 
 footer:
   links:
@@ -123,3 +127,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+sass:
+  sass_dir: _sass
+  style: compressed
