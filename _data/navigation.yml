@@ -1,13 +1,13 @@
 main:
-  - title: "Research"
-    url: /
   - title: "About"
-    url: /about/
+    url: /
+  - title: "Research"
+    url: /research/
   - title: "Teaching"
     url: /teaching/
   - title: "Talks"
     url: /talk/
   - title: "Others"
-    url: /review/
+    url: /other/
 
 

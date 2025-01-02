@@ -1,10 +1,10 @@
 ---
-permalink: /
+permalink: /research/
 author_profile: true
 layout: single
 title: "Research"
 header:
-  overlay_image: /assets/images/overlay.jpg
+  overlay_image: /assets/images/ts.jpg
 ---
 
 ##### PhD Manuscript 
