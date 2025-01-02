@@ -1,9 +1,14 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Publications"
-    url: /publications/
-  - title: "Teaching"
-    url: /teaching/
+  - title: "Research"
+    url: /research/
   - title: "About"
     url: /about/
+  - title: "Academic services"
+    sublinks:
+    - title: "Teaching"
+      url: /teaching/
+    - title: "Review"
+      url: /review/
+  - title: "Talks"
+    url: /teaching/
+

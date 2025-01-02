@@ -60,17 +60,23 @@ author:
   avatar : "/assets/images/bio-photo.jpeg"
   bio    : "PhD in Deep Learning. I am currently working as a research scientist at EDF R&D"
   links:
+    - label: "etienne.le-naour_at_edf.fr"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:etienne.le-naour_at_edf.fr?body=Replace _at_ with @"
     - label: "Google Scholar"
-      icon: "fas fa-fw fa-link"
+      icon: "ai ai-fw ai-google-scholar"
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
+    - label: "Resume"
+      icon: "fab fa-fw fa-envira"
+      url: 
 
 footer:
   links:
     - label: "Scholar"
-      icon: "fas fa-fw fa-link"
+      icon: "ai ai-fw ai-google-scholar"
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
