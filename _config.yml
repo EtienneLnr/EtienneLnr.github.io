@@ -57,7 +57,7 @@ plugins:
 
 author:
   name   : "Etienne Le Naour"
-  avatar : "/assets/images/bio-photo.jpeg"
+  avatar : "/assets/images/bio.jpeg"
   bio    : "PhD in Deep Learning. I am currently working as a research scientist at EDF R&D"
   links:
     - label: "etienne.le-naour_at_edf.fr"

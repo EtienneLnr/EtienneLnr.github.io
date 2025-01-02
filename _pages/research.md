@@ -3,7 +3,8 @@ permalink: /research/
 author_profile: true
 layout: single
 title: "Research"
-
+header:
+  overlay_image: /assets/images/overlay.jpg
 ---
 
 ##### PhD Manuscript 
