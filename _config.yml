@@ -47,6 +47,10 @@ include:
 #   - vendor/ruby/
 
 # Plugins (previously gems:)
+header:
+  custom:
+    - <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url }}">
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -60,7 +64,7 @@ author:
   avatar : "/assets/images/bio.jpeg"
   bio    : "PhD in Deep Learning. I am currently working as a research scientist at EDF R&D"
   links:
-    - label: "etienne.le-naour_at_edf.fr"
+    - label: "etienne.le-naour[at]edf.fr"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:etienne.le-naour_at_edf.fr?body=Replace _at_ with @"
     - label: "Google Scholar"
