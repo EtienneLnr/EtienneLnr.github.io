@@ -3,12 +3,11 @@ main:
     url: /
   - title: "About"
     url: /about/
-  - title: "Academic services"
-    sublinks:
-    - title: "Teaching"
-      url: /teaching/
-    - title: "Review"
-      url: /review/
+  - title: "Teaching"
+    url: /teaching/
   - title: "Talks"
     url: /talk/
+  - title: "Others"
+    url: /review/
+
 
