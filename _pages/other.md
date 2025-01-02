@@ -1,5 +1,5 @@
 ---
-permalink: /reviews/
+permalink: /other/
 layout: single
 author_profile: true
 title: "Reviews"
