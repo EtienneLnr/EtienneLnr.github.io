@@ -86,7 +86,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: research
     values:
       layout: single
       author_profile: true
