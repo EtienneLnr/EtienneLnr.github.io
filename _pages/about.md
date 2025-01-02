@@ -1,6 +1,8 @@
 ---
 permalink: /
+author_profile: true
 title: "About"
+layout: single
 header:
   overlay_image: /assets/images/overlay.jpg
 ---
