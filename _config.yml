@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Welcome
+title: Bio
 email:
 description: I hold a PhD in Deep Learning from Sorbonne University. 
   I currently work as a research scientist at EDF R&D, where I develop innovative deep learning models for temporal data, 
