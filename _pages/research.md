@@ -1,7 +1,7 @@
 ---
 permalink: /research/
-author_profile: true
 layout: single
+author_profile: true
 title: "Research"
 header:
   overlay_image: /assets/images/ts.jpg
