@@ -3,7 +3,7 @@ main:
     url: /research/
   - title: "Teaching"
     url: /teaching/
-    - title: "Supervision"
+  - title: "Supervision"
     url: /supervision/
   - title: "Talks"
     url: /talk/
