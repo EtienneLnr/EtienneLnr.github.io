@@ -1,8 +1,10 @@
 main:
   - title: "Research"
     url: /research/
-  - title: "Supervision and Teaching"
+  - title: "Teaching"
     url: /teaching/
+    - title: "Supervision"
+    url: /supervision/
   - title: "Talks"
     url: /talk/
   - title: "Others"

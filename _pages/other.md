@@ -2,7 +2,8 @@
 permalink: /other/
 layout: single
 author_profile: true
-title: "Reviews"
+title: "Others"
 header:
   overlay_image: /assets/images/overlay.jpg
 ---
+
