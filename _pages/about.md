@@ -4,7 +4,7 @@ layout: single
 author_profile: true
 title: "About"
 header:
-  overlay_image: /assets/images/overlay.jpgss
+  overlay_image: /assets/images/overlay.jpg
 ---
 
 I hold a PhD in Deep Learning from Sorbonne University, where my research focused on **Learning Neural Representations for Time Series**. You can find my manuscript [here](https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf). 
