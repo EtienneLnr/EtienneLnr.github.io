@@ -11,4 +11,4 @@ I hold a PhD in Deep Learning from Sorbonne University, where my research focuse
 
 Currently, I work as a Research Scientist at EDF R&D, developing cutting-edge deep learning models for temporal data with applications in the energy sector. 
 
-I’m always open to discussions about research and collaboration—feel free to get in touch!ssssssssssss
+I’m always open to discussions about research and collaboration—feel free to get in touch!
