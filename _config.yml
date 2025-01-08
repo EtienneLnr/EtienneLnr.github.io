@@ -27,7 +27,7 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 4 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Paris 
 
@@ -46,7 +46,6 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-home_page: /about/
 # Plugins (previously gems:)
 header:
   custom:

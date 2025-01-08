@@ -1,8 +1,7 @@
 ---
-permalink: /about/
 layout: single
 author_profile: true
-title: "About"
+title: "Bio"
 header:
   overlay_image: /assets/images/overlay.jpg
 ---
