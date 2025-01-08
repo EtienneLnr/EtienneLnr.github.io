@@ -1,10 +1,10 @@
 main:
   - title: "Research"
     url: /research/
-  - title: "Teaching"
-    url: /teaching/
   - title: "Supervision"
     url: /supervision/
+  - title: "Teaching"
+    url: /teaching/
   - title: "Talks"
     url: /talk/
   - title: "Others"
