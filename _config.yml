@@ -46,7 +46,7 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
+home_page: /about/
 # Plugins (previously gems:)
 header:
   custom:
