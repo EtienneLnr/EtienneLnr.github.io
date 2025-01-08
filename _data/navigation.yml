@@ -1,6 +1,6 @@
 main:
   - title: "About"
-    url: /
+    url: /about/
   - title: "Research"
     url: /research/
   - title: "Teaching"
@@ -9,5 +9,4 @@ main:
     url: /talk/
   - title: "Others"
     url: /other/
-
 
