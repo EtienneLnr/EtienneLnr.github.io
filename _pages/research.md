@@ -13,8 +13,20 @@ header:
 E. Le Naour  
 [manuscript](https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf)
 
+##### Preprint
+
+- *Are Time-Indexed Foundation Models the Future of Time Series Imputation?* 
+E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua  
+[paper](https://arxiv.org/abs/2507.13207)
+
 
 ##### Publications
+
+- *MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling* 
+E. Le Naour*, T. Nabil*, G. Agoua  
+*ECML Workshop, AALTD*, 2025  
+[paper](https://arxiv.org/abs/2507.13207) | [code](https://github.com/EtienneLnr/MoTM)
+
 
 - *AROMA: Preserving Spatial Structure for Latent PDE Modeling with Local Neural Fields*  
 L. Serrano, T.X. Wang, E. Le Naour, J.N. Vittaut, P. Gallinari  
@@ -24,13 +36,13 @@ L. Serrano, T.X. Wang, E. Le Naour, J.N. Vittaut, P. Gallinari
 
 - *Time Series Continuous Modeling for Imputation and Forecasting with Implicit Neural Representations*  
 E. Le Naour, L. Serrano, L. Migus, Y. Yin, G. Agoua, N. Baskiotis, P. Gallinari, V. Guigue  
-*Transactions on Machine Learning Research*, 2024  
+*TMLR*, 2024  
 [paper](https://arxiv.org/pdf/2306.05880) | [code](https://github.com/EtienneLnr/TimeFlow)
 
 
 - *WindDragon: Enhancing wind power forecasting with Automated Deep Learning*  
 J. Keisler, E. Le Naour  
-*ICLR Workshop, Tackling Climate Change with Machine Learning*, 2024  
+*ICLR Workshop, CCAI*, 2024  
 [paper](https://arxiv.org/pdf/2402.14385)
 
 

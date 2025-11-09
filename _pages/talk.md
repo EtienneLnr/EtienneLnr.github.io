@@ -7,12 +7,15 @@ header:
   overlay_image: /assets/images/overlay.jpg
 ---
 
+- *MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling*, September 27th, 2024.  
+[ECML 2025, AALTD](https://ecml-aaltd.github.io/aaltd2025/), Porto, Portugal   
+[Slides](http://etiennelnr.github.io/assets/files/Prez_MOTM.pdf)
+
 
 - *Learning Neural Representations for Time Series*, September 27th, 2024.  
 **PhD Defense**, Paris, France  
 [Slides](http://etiennelnr.github.io/assets/files/PhD_defense.pdf)
 [Youtube](https://www.youtube.com/watch?v=0KbYjcaSjf4)
-
 
 - *Time Series Continuous Modeling with Implicit Neural Representations*, July 3rd, 2024.  
 [CAp 2024](https://caprfiap2024.sciencesconf.org), Lille, France  
