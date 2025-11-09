@@ -62,7 +62,7 @@ plugins:
 author:
   name   : "Etienne Le Naour"
   avatar : "/assets/images/bio.jpeg"
-  bio    : "PhD in Deep Learning, Research Scientist at EDF R&D."
+  bio    : "PhD in Deep Learning, AI Research Scientist at EDF R&D."
   links:
     - label: "etienne.le-naour[at]edf.fr"
       icon: "fas fa-fw fa-envelope"
@@ -72,7 +72,7 @@ author:
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/EtienneLnr"
     - label: "Resume"
       icon: "fab fa-fw fa-envira"
       url: 
@@ -87,7 +87,7 @@ footer:
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/EtienneLnr"
 
 defaults:
   # _posts

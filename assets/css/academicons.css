@@ -247,3 +247,9 @@
 .fa.fa-pull-right {
   margin-left: .3em;
 }
+
+.author__avatar img {
+  width: 180px;   /* taille de l'image (par défaut souvent 80px) */
+  height: 180px;
+  border-radius: 50%; /* garde la forme ronde */
+}
