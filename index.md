@@ -59,24 +59,32 @@ I’m always open to discussions about research and collaboration — feel free 
 
 <style>
 /* --- Page-specific enhancements --- */
+
+/* Conteneur principal du thème Minimal */
+.page__content {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: clamp(700px, 80%, 1200px); /* s’adapte automatiquement à la largeur de l’écran */
+  margin: 0 auto;   /* centre le contenu */
+  padding: 0 1rem;  /* petit espace sur les côtés */
+}
+
+/* Bio intro */
 .bio-intro {
   background: #f9fafc;
   border-left: 4px solid #3f51b5;
-  padding: 1.5rem 1.8rem;
+  padding: 1.5rem 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   margin-bottom: 2rem;
+  max-width: 100%;
 }
 
+/* Titres */
 .bio-intro h2 {
   margin-top: 0;
   color: #1a1a1a;
   font-weight: 600;
-}
-
-.page__content {
-  font-size: 1.05rem;
-  line-height: 1.75;
 }
 
 h2, h3 {
@@ -84,6 +92,7 @@ h2, h3 {
   font-weight: 600;
 }
 
+/* Liens */
 a {
   color: #2a4cff;
   text-decoration: none;
@@ -92,6 +101,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Blockquote */
 blockquote {
   border-left: 4px solid #3f51b5;
   background: #f5f7ff;
