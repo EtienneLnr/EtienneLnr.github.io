@@ -16,7 +16,7 @@
 title: Bio
 email:
 description: I hold a PhD in Deep Learning from Sorbonne University. 
-  I currently work as an AI research scientist at EDF Lab where I develop innovative deep learning models for temporal data, 
+  I currently work as a research scientist at EDF R&D, where I develop innovative deep learning models for temporal data, 
   focusing on applications in the energy sector. I am always eager to connect and discuss my research, feel free to reach out!
 github_username: EtienneLnr
 minimal_mistakes_skin: dirt 
@@ -50,7 +50,6 @@ include:
 header:
   custom:
     - <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url }}">
-    - <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
 plugins:
   - jekyll-paginate
@@ -63,7 +62,7 @@ plugins:
 author:
   name   : "Etienne Le Naour"
   avatar : "/assets/images/bio.jpeg"
-  bio    : "PhD in Deep Learning, AI Research Scientist at EDF R&D."
+  bio    : "PhD in Deep Learning, Research Scientist at EDF R&D."
   links:
     - label: "etienne.le-naour[at]edf.fr"
       icon: "fas fa-fw fa-envelope"
@@ -73,7 +72,7 @@ author:
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/EtienneLnr"
+      url: "https://github.com/"
     - label: "Resume"
       icon: "fab fa-fw fa-envira"
       url: 
@@ -88,7 +87,7 @@ footer:
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/EtienneLnr"
+      url: "https://github.com/"
 
 defaults:
   # _posts
@@ -131,5 +130,3 @@ tag_archive:
 sass:
   sass_dir: _sass
   style: compressed
-include:
-  - assets/css
