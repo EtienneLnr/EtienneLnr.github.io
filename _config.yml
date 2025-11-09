@@ -50,6 +50,7 @@ include:
 header:
   custom:
     - <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url }}">
+    - <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
 plugins:
   - jekyll-paginate
@@ -130,3 +131,5 @@ tag_archive:
 sass:
   sass_dir: _sass
   style: compressed
+include:
+  - assets/css

@@ -1,10 +1,11 @@
 ---
 layout: single
+classes: wide
 author_profile: true
 title: "Etienne Le Naour"
 header:
   overlay_image: /assets/images/overlay.jpg
-  overlay_filter: 0.25
+  overlay_filter: 0.3
   caption: "Exploring Deep Learning for Temporal Data"
   actions:
     - label: "📘 Research"
