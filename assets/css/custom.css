@@ -1,4 +1,4 @@
-/* === Custom homepage styling === */
+/* === Improved homepage layout === */
 
 .page__content {
   font-size: 1.05rem;
@@ -6,44 +6,49 @@
   color: #333;
 }
 
-/* Headings */
-h1, h2, h3 {
+h2, h3 {
   font-weight: 600;
-  color: #1c1c1c;
+  color: #1a1a1a;
 }
 
-/* Avatar */
+/* Center top section */
+.page__content > div[align="center"] {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Cards grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+}
+
+/* Avatar tweak */
 .author__avatar img {
-  width: 180px !important;
-  height: 180px !important;
+  width: 160px !important;
+  height: 160px !important;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  margin-bottom: 10px;
-}
-
-/* Buttons */
-.btn {
-  margin: 6px;
-  border-radius: 8px;
-  font-weight: 500;
-}
-
-/* Quotes */
-blockquote {
-  border-left: 4px solid #3f51b5;
-  background: #f7f9ff;
-  padding: 0.7em 1em;
-  font-style: italic;
-  border-radius: 4px;
-}
-
-/* Section spacing */
-h2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Centered sections */
-.centered {
-  text-align: center;
 }

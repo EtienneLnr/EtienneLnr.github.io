@@ -5,7 +5,7 @@ author_profile: true
 title: "Etienne Le Naour"
 header:
   overlay_image: /assets/images/overlay.jpg
-  overlay_filter: 0.3
+  overlay_filter: 0.25
   caption: "Exploring Deep Learning for Temporal Data"
   actions:
     - label: "📘 Research"
@@ -17,15 +17,19 @@ excerpt: "AI Research Scientist | Deep Learning for Time Series | Foundation Mod
 
 <div align="center">
 
-<img src="/assets/images/bio.jpeg" alt="Etienne Le Naour" style="width:180px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.2); margin-bottom:15px;"/>
+<img src="/assets/images/bio.jpeg" alt="Etienne Le Naour" style="width:180px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.25); margin-bottom:15px;"/>
 
-# 👋 Hi, I'm **Etienne Le Naour**
+<h2>👋 Hi, I'm <b>Etienne Le Naour</b></h2>
 
-🎓 *PhD in Deep Learning* — AI Research Scientist at **EDF R&D**  
-Passionate about **neural architectures for time series** and **foundation models** for temporal data.
+<p>
+🎓 <em>PhD in Deep Learning</em> — AI Research Scientist at <strong>EDF R&D</strong><br>
+Passionate about <strong>neural architectures for time series</strong> and <strong>foundation models</strong> for temporal data.
+</p>
 
-[See Research →](https://etiennelnr.github.io/research/){: .btn .btn--primary }  
-[View Talks →](https://etiennelnr.github.io/talk/){: .btn .btn--inverse }
+<p>
+<a href="https://etiennelnr.github.io/research/" class="btn btn--primary">📘 See Research</a>
+<a href="https://etiennelnr.github.io/talk/" class="btn btn--inverse">🎤 View Talks</a>
+</p>
 
 </div>
 
@@ -33,10 +37,9 @@ Passionate about **neural architectures for time series** and **foundation model
 
 ## 🧠 About Me
 
-I’m an **AI Research Scientist** passionate about *Deep Learning for time series and temporal data*.  
-My research focuses on **neural architectures** capable of learning from complex temporal dynamics — from **forecasting** to **representation learning**.
+My research explores how **neural architectures** can learn from complex temporal dynamics — from **forecasting** to **representation learning**.
 
-> 🔍 Recently, I’ve been exploring **foundation models for time series**, aiming to design **general-purpose architectures** that can transfer across domains and tasks in a **zero-shot** setting.
+> 🧩 I currently focus on developing **foundation models for time series**, aiming to build general-purpose architectures that transfer across domains and tasks in a **zero-shot** manner.
 
 ---
 
@@ -44,71 +47,52 @@ My research focuses on **neural architectures** capable of learning from complex
 
 - Deep learning for time series and spatio-temporal modeling  
 - Foundation models & large-scale pretraining  
-- Time series representation learning and self-supervised learning  
+- Self-supervised representation learning for temporal data  
 - Imputation, forecasting, and other supervised tasks  
 - Scientific and industrial applications of AI  
 
 ---
 
-## 📚 Publications & Talks
+## 🧩 Featured Projects
 
-📘 Explore my main research works → [**Research Page**](https://etiennelnr.github.io/research/)  
-🎤 Discover my presentations → [**Talks**](https://etiennelnr.github.io/talk/)
+<div class="grid">
+  <div class="card">
+    <img src="/assets/images/ts.jpg" alt="Time Series Foundation Models">
+    <h3>Time Series Foundation Models</h3>
+    <p>Exploring cross-domain temporal transfer through large-scale pretraining and self-supervised learning.</p>
+    <a href="https://etiennelnr.github.io/research/" class="btn btn--small btn--primary">Learn More</a>
+  </div>
 
-You can also find a list of selected papers, code, and open-source contributions on my [GitHub](https://github.com/etiennelnr).
+  <div class="card">
+    <img src="/assets/images/bio.png" alt="Industrial AI Applications">
+    <h3>Industrial AI Applications</h3>
+    <p>Integrating deep learning into real-world systems for smarter forecasting and monitoring at EDF R&D.</p>
+  </div>
+
+  <div class="card">
+    <img src="/assets/images/overlay.jpg" alt="Representation Learning">
+    <h3>Representation Learning</h3>
+    <p>Designing architectures that can extract generalizable embeddings from complex temporal dynamics.</p>
+  </div>
+</div>
 
 ---
 
 ## 🎓 PhD Thesis
 
-I hold a **PhD in Deep Learning** from *Sorbonne University*, where my research focused on  
-**Learning Neural Representations for Time Series**.
+**PhD in Deep Learning**, *Sorbonne University* —  
+**Learning Neural Representations for Time Series**
 
 📄 [Read the manuscript](https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf)  
-🖥️ [View the defense slides](http://etiennelnr.github.io/assets/files/PhD_defense.pdf)
+🖥️ [View defense slides](http://etiennelnr.github.io/assets/files/PhD_defense.pdf)
 
 {: .notice--info}
-> 🧩 This work bridges theoretical foundations and practical applications of time series modeling — from forecasting to general representation learning.
+> Bridging theoretical insights and practical AI for real-world time series challenges.
 
 ---
 
 ## 💬 Contact
 
-I’m always open to discussions, collaborations, and new research opportunities.  
-Feel free to reach out:
-
 📧 etienne.le-naour[at]edf.fr  
-🔗 [Google Scholar](https://scholar.google.com/citations?user=hkQJ3HAAAAAJ&hl=fr)  
+🔗 [Google Scholar](https://scholar.google.com)  
 💻 [GitHub](https://github.com/etiennelnr)
-
----
-
-<style>
-/* --- Custom style for homepage --- */
-.page__content {
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-}
-
-.btn {
-  margin: 6px;
-  border-radius: 8px;
-}
-
-.author__avatar img {
-  width: 180px !important;
-  height: 180px !important;
-  border-radius: 50%;
-}
-
-blockquote {
-  border-left: 4px solid #3f51b5;
-  background: #f5f7ff;
-  padding: 0.7em 1em;
-  font-style: italic;
-}
-</style>
