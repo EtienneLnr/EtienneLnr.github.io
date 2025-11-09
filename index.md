@@ -16,10 +16,6 @@ I’m an <strong>AI Research Scientist</strong> passionate about <em>Deep Learni
 My work focuses on designing <strong>neural architectures</strong> capable of learning from complex temporal dynamics — from <strong>forecasting</strong> to <strong>representation learning</strong>.
 </p>
 
-<p>
-Recently, my research has centered on developing <strong>foundation models for time series</strong>, aiming to build <em>general-purpose models</em> that can transfer across domains and tasks in a <em>zero-shot</em> manner.
-</p>
-
 </div>
 
 ---
