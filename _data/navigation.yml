@@ -5,8 +5,6 @@ main:
     url: /talk/
   - title: "Supervision"
     url: /supervision/
-  - title: "Teaching"
+  - title: "Teaching and Service"
     url: /teaching/
-  - title: "Others"
-    url: /other/
 
