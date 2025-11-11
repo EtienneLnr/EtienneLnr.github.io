@@ -13,8 +13,7 @@ header:
 <h2>About Me</h2>
 
 <p>
-I am an <strong>AI Research Scientist</strong> specializing in <em>Deep Learning for time series and temporal data</em>.  
-My research explores the development of advanced <strong>neural architectures</strong> designed to capture and model complex temporal dependencies, with applications ranging from <strong>time series forecasting</strong> to <strong>representation learning</strong> and <strong>sequence modeling</strong>.
+I am an <strong>AI Research Scientist</strong> specializing in <em>Deep Learning for time series and temporal data</em>. My research explores the development of advanced <strong>neural architectures</strong> designed to capture and model complex temporal dependencies, with applications ranging from <strong>time series forecasting</strong> to <strong>representation learning</strong>.
 </p>
 
 
@@ -41,8 +40,7 @@ and discover my [**talks**](https://etiennelnr.github.io/talk/).
 
 ## 🎓 PhD Thesis
 
-I hold a <strong>PhD in Deep Learning</strong> from <em>Sorbonne University</em>,  
-where my research focused on <strong>Learning Neural Representations for Time Series</strong>.
+I hold a <strong>PhD in Deep Learning</strong> from <em>Sorbonne University</em>, where my research focused on <strong>Learning Neural Representations for Time Series</strong>.
 
 📄 [Read the manuscript](https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf)  
 🖥️ [View the defense slides](http://etiennelnr.github.io/assets/files/PhD_defense.pdf)
