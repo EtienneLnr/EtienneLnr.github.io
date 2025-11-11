@@ -49,10 +49,13 @@ header:
 <em>ICLR Workshop, CCAI</em>, 2024<br>
 <a href="https://arxiv.org/pdf/2402.14385">paper</a></li>
 
-<li><strong>Interpretable Time Series Neural Representation for Classification Purposes</strong> — <em>Best Research Paper</em><br>
-<em>E. Le Naour, G. Agoua, N. Baskiotis, V. Guigue</em><br>
-<em>IEEE DSAA</em>, 2023<br>
-<a href="https://arxiv.org/pdf/2310.16696">paper</a> | <a href="https://github.com/EtienneLnr/InterpretableTSRepresentation">code</a></li>
+<li>
+  <strong>Interpretable Time Series Neural Representation for Classification Purposes</strong> — 
+  <em class="highlight">Best Research Paper</em><br>
+  <em>E. Le Naour, G. Agoua, N. Baskiotis, V. Guigue</em><br>
+  <em>IEEE DSAA</em>, 2023<br>
+  <a href="https://arxiv.org/pdf/2310.16696">paper</a> | <a href="https://github.com/EtienneLnr/InterpretableTSRepresentation">code</a>
+</li>
 </ul>
 </div>
 
@@ -68,6 +71,14 @@ header:
   max-width: clamp(700px, 90%, 1500px);
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.highlight {
+  color: #ff9800;       /* couleur orange pour se démarquer */
+  font-weight: 700;     /* plus visible */
+  background: #fff4e5;  /* léger fond pour mieux le faire ressortir */
+  padding: 0 0.3rem;
+  border-radius: 3px;
 }
 
 .research-block {
