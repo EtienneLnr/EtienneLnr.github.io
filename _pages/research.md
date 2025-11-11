@@ -78,7 +78,6 @@ E. Le Naour, G. Agoua, N. Baskiotis, V. Guigue
 </div>
 
 
-
 <style>
 /* --- Page-specific enhancements --- */
 
