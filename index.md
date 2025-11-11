@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: .layout--bio
 author_profile: true
 title: "Bio"
 header:
