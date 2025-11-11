@@ -58,11 +58,11 @@ I’m always open to discussions about research and collaboration — feel free 
 
 /* Conteneur principal du thème Minimal */
 .page__content {
-  font-size: 1.05rem;
-  line-height: 1.75;
-  max-width: clamp(700px, 80%, 1200px); /* s’adapte automatiquement à la largeur de l’écran */
-  margin: 0 auto;   /* centre le contenu */
-  padding: 0 1rem;  /* petit espace sur les côtés */
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: clamp(700px, 90%, 1500px);
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Bio intro */
