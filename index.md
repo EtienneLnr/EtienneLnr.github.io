@@ -58,7 +58,7 @@ I’m always open to discussions about research and collaboration — feel free 
 
 /* Conteneur principal du thème Minimal */
 .page__content {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   line-height: 1.65;
   max-width: clamp(700px, 90%, 1500px);
   margin: 0 auto;
