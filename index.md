@@ -33,8 +33,7 @@ I am an <strong>AI Research Scientist</strong> specializing in <em>Deep Learning
 
 ## 📚 Publications & Talks
 
-Explore my main research contributions [**here**](https://etiennelnr.github.io/research/)  
-and discover my [**talks**](https://etiennelnr.github.io/talk/).
+Explore my main research contributions [**here**](https://etiennelnr.github.io/research/) and discover my [**talks**](https://etiennelnr.github.io/talk/).
 
 ---
 
