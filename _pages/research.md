@@ -17,7 +17,7 @@ E. Le Naour
 
 - *Are Time-Indexed Foundation Models the Future of Time Series Imputation?* 
 E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua  
-[paper](https://arxiv.org/abs/2507.13207)
+[paper](https://arxiv.org/abs/2511.05980)
 
 
 ##### Publications

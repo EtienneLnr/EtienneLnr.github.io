@@ -12,9 +12,10 @@ header:
 <h2>👋 About Me</h2>
 
 <p>
-I’m an <strong>AI Research Scientist</strong> passionate about <em>Deep Learning for time series and temporal data</em>.  
-My work focuses on designing <strong>neural architectures</strong> capable of learning from complex temporal dynamics — from <strong>forecasting</strong> to <strong>representation learning</strong>.
+I am an <strong>AI Research Scientist</strong> specializing in <em>Deep Learning for time series and temporal data</em>.  
+My research explores the development of advanced <strong>neural architectures</strong> designed to capture and model complex temporal dependencies, with applications ranging from <strong>time series forecasting</strong> to <strong>representation learning</strong> and <strong>sequence modeling</strong>.
 </p>
+
 
 </div>
 
