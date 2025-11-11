@@ -22,7 +22,7 @@ header:
 
 <p><strong>Are Time-Indexed Foundation Models the Future of Time Series Imputation?</strong><br>
 <em>E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua</em><br>
-<a href="https://arxiv.org/abs/2511.05980">📄 Paper (arXiv)</a></p>
+<a href="https://arxiv.org/abs/2511.05980"> Paper (arXiv)</a></p>
 </div>
 
 <div class="research-block">
