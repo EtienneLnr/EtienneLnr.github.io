@@ -21,7 +21,7 @@ I am an <strong>AI Research Scientist</strong> specializing in <em>Deep Learning
 
 ---
 
-## 🔬 Research Interests
+## Research Interests
 
 - Deep learning for <strong>time series</strong> and <strong>spatio-temporal</strong> modeling  
 - <strong>Foundation models</strong>, large-scale pretraining and inference adaptation for time series  
@@ -31,13 +31,13 @@ I am an <strong>AI Research Scientist</strong> specializing in <em>Deep Learning
 
 ---
 
-## 📚 Publications & Talks
+## Publications & Talks
 
 Explore my main research contributions [**here**](https://etiennelnr.github.io/research/) and discover my [**talks**](https://etiennelnr.github.io/talk/).
 
 ---
 
-## 🎓 PhD Thesis
+## PhD Thesis
 
 I hold a <strong>PhD in Deep Learning</strong> from <em>Sorbonne University</em>, where my research focused on <strong>Learning Neural Representations for Time Series</strong>.
 
@@ -46,7 +46,7 @@ I hold a <strong>PhD in Deep Learning</strong> from <em>Sorbonne University</em>
 
 ---
 
-## 💬 Contact
+## Contact
 
 I’m always open to discussions about research and collaboration — feel free to get in touch!
 
