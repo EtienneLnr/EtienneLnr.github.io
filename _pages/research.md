@@ -8,74 +8,63 @@ header:
   overlay_image: /assets/images/ts.jpg
 ---
 
-<div class="manuscript-class">
+---
+permalink: /research/
+layout: single
+classes: wide
+author_profile: true
+title: "Research"
+header:
+  overlay_image: /assets/images/ts.jpg
+  overlay_filter: 0.01
+---
 
-<h2>About Me</h2>
+## PhD Manuscript
+{: .research-block}
 
-<p>
-##### PhD Manuscript 
+**Learning Neural Representations for Time Series**  
+_E. Le Naour_  
+[Manuscript (HAL)](https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf)  
 
-- *Learning Neural Representation for Time Series*  
-E. Le Naour  
-[manuscript](https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf)
-</p>
+---
 
-</div>
+## Preprint
+{: .research-block}
 
+**Are Time-Indexed Foundation Models the Future of Time Series Imputation?**  
+_E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua_  
+[Paper (arXiv)](https://arxiv.org/abs/2511.05980)  
 
-<div class="preprint-class">
+---
 
-<h2>About Me</h2>
+## Publications
+{: .research-block}
 
-<p>
-##### Preprint
+- **MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling**  
+  _E. Le Naour*, T. Nabil*, G. Agoua_  
+  *ECML Workshop, AALTD*, 2025  
+  [paper](https://arxiv.org/abs/2507.13207) | [code](https://github.com/EtienneLnr/MoTM)
 
-- *Are Time-Indexed Foundation Models the Future of Time Series Imputation?* 
-E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua  
-[paper](https://arxiv.org/abs/2511.05980)
-</p>
+- **AROMA: Preserving Spatial Structure for Latent PDE Modeling with Local Neural Fields**  
+  _L. Serrano, T.X. Wang, E. Le Naour, J.N. Vittaut, P. Gallinari_  
+  *NeurIPS*, 2024  
+  [paper](https://arxiv.org/pdf/2406.02176) | [code](https://github.com/LouisSerrano/aroma)
 
-</div>
+- **Time Series Continuous Modeling for Imputation and Forecasting with Implicit Neural Representations**  
+  _E. Le Naour, L. Serrano, L. Migus, Y. Yin, G. Agoua, N. Baskiotis, P. Gallinari, V. Guigue_  
+  *TMLR*, 2024  
+  [paper](https://arxiv.org/pdf/2306.05880) | [code](https://github.com/EtienneLnr/TimeFlow)
 
+- **WindDragon: Enhancing wind power forecasting with Automated Deep Learning**  
+  _J. Keisler, E. Le Naour_  
+  *ICLR Workshop, CCAI*, 2024  
+  [paper](https://arxiv.org/pdf/2402.14385)
 
-<div class="publications-class">
+- **Interpretable Time Series Neural Representation for Classification Purposes** — *Best Research Paper*  
+  _E. Le Naour, G. Agoua, N. Baskiotis, V. Guigue_  
+  *IEEE DSAA*, 2023  
+  [paper](https://arxiv.org/pdf/2310.16696) | [code](https://github.com/EtienneLnr/InterpretableTSRepresentation)
 
-<h2>About Me</h2>
-
-<p>
-##### Publications
-
-- *MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling* 
-E. Le Naour*, T. Nabil*, G. Agoua  
-*ECML Workshop, AALTD*, 2025  
-[paper](https://arxiv.org/abs/2507.13207) | [code](https://github.com/EtienneLnr/MoTM)
-
-
-- *AROMA: Preserving Spatial Structure for Latent PDE Modeling with Local Neural Fields*  
-L. Serrano, T.X. Wang, E. Le Naour, J.N. Vittaut, P. Gallinari  
-*NeurIPS*, 2024  
-[paper](https://arxiv.org/pdf/2406.02176) | [code](https://github.com/LouisSerrano/aroma)
-
-
-- *Time Series Continuous Modeling for Imputation and Forecasting with Implicit Neural Representations*  
-E. Le Naour, L. Serrano, L. Migus, Y. Yin, G. Agoua, N. Baskiotis, P. Gallinari, V. Guigue  
-*TMLR*, 2024  
-[paper](https://arxiv.org/pdf/2306.05880) | [code](https://github.com/EtienneLnr/TimeFlow)
-
-
-- *WindDragon: Enhancing wind power forecasting with Automated Deep Learning*  
-J. Keisler, E. Le Naour  
-*ICLR Workshop, CCAI*, 2024  
-[paper](https://arxiv.org/pdf/2402.14385)
-
-
-- *Interpretable Time Series Neural Representation for Classification Purposes*, **Best Research Paper**  
-E. Le Naour, G. Agoua, N. Baskiotis, V. Guigue  
-*IEEE DSAA*, 2023  
-[paper](https://arxiv.org/pdf/2310.16696) | [code](https://github.com/EtienneLnr/InterpretableTSRepresentation)
-</p>
-
-</div>
 
 
 <style>
@@ -90,8 +79,8 @@ E. Le Naour, G. Agoua, N. Baskiotis, V. Guigue
   padding: 0 1rem;
 }
 
-/* Bio intro */
-.manuscript-class{
+/* Bloc de recherche : style "About Me" */
+.research-block {
   background: #f9fafc;
   border-left: 4px solid #3f51b5;
   padding: 1.5rem 2rem;
@@ -101,53 +90,21 @@ E. Le Naour, G. Agoua, N. Baskiotis, V. Guigue
   max-width: 100%;
 }
 
-/* Titres */
-.manuscript-class h2 {
-  margin-top: 0;
-  color: #1a1a1a;
-  font-weight: 600;
+/* Ajuste les titres situés juste après un bloc */
+.research-block + hr,
+.research-block + p,
+.research-block + h2,
+.research-block + h3 {
+  margin-top: 0.75rem;
 }
 
-
-/* Bio intro */
-.preprint-class {
-  background: #f9fafc;
-  border-left: 4px solid #3f51b5;
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  margin-bottom: 2rem;
-  max-width: 100%;
+/* Liens dans les blocs */
+.research-block a {
+  color: #2a4cff;
+  text-decoration: none;
 }
-
-/* Titres */
-.preprint-class h2 {
-  margin-top: 0;
-  color: #1a1a1a;
-  font-weight: 600;
-}
-
-/* Bio intro */
-.publications-class {
-  background: #f9fafc;
-  border-left: 4px solid #3f51b5;
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  margin-bottom: 2rem;
-  max-width: 100%;
-}
-
-/* Titres */
-.publications-class h2 {
-  margin-top: 0;
-  color: #1a1a1a;
-  font-weight: 600;
-}
-
-h2, h3 {
-  color: #1c1c1c;
-  font-weight: 600;
+.research-block a:hover {
+  text-decoration: underline;
 }
 
 /* Liens */
