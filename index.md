@@ -5,7 +5,7 @@ author_profile: true
 title: "Bio"
 header:
   overlay_image: /assets/images/overlay.jpg
-  overlay_filter: 0.25
+  overlay_filter: 0.01
 ---
 
 <div class="bio-intro">

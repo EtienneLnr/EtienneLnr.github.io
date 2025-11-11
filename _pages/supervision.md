@@ -1,6 +1,7 @@
 ---
 permalink: /supervision/
 layout: single
+classes: wide
 author_profile: true
 title: "Supervision"
 header:
