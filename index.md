@@ -1,5 +1,6 @@
 ---
-layout: .layout--bio
+layout: single
+classes: wide
 author_profile: true
 title: "Bio"
 header:
@@ -9,7 +10,7 @@ header:
 
 <div class="bio-intro">
 
-<h2>👋 About Me</h2>
+<h2>About Me</h2>
 
 <p>
 I am an <strong>AI Research Scientist</strong> specializing in <em>Deep Learning for time series and temporal data</em>.  
