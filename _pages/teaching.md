@@ -1,6 +1,7 @@
 ---
 permalink: /teaching/
 layout: single
+classes: wide
 author_profile: true
 title: "Teaching and Service"
 header:
