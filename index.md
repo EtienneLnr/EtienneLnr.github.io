@@ -26,7 +26,7 @@ I am an <strong>AI Research Scientist</strong> specializing in <em>Deep Learning
 - Deep learning for <strong>time series</strong> and <strong>spatio-temporal</strong> modeling  
 - <strong>Foundation models</strong>, large-scale pretraining and inference adaptation for time series  
 - Time series <strong>representation learning</strong> and self-supervised learning  
-- Imputation, forecasting, and other supervised tasks  
+- Imputation, forecasting, and other <strong>supervised tasks</strong>  
 - Scientific and industrial <strong>applications</strong> of AI  
 
 ---
