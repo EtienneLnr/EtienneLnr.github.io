@@ -17,18 +17,23 @@ header:
 <a href="https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf"> Manuscript (HAL)</a></p>
 </div>
 
-<div class="research-block">
+<!-- <div class="research-block">
 <h2>Preprint</h2>
 
 <p><strong>Are Time-Indexed Foundation Models the Future of Time Series Imputation?</strong><br>
 <em>E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua</em><br>
 <a href="https://arxiv.org/abs/2511.05980"> Paper (arXiv)</a></p>
-</div>
+</div> -->
 
 <div class="research-block">
 <h2>Publications</h2>
 
 <ul>
+<li><strong>Are Time-Indexed Foundation Models the Future of Time Series Imputation?</strong><br>
+<em>E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua</em><br>
+<em>TMLR</em>, 2026<br>
+<a href="https://arxiv.org/pdf/2511.05980">paper</a> | <a href="https://github.com/taharnbl/tsfm_imputation">code</a></li>
+
 <li><strong>MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling</strong><br>
 <em>E. Le Naour*, T. Nabil*, G. Agoua</em><br>
 <em>ECML Workshop, AALTD</em>, 2025<br>
