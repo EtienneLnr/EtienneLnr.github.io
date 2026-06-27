@@ -1,107 +1,92 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# ─────────────────────────────────────────────
+#  Site Settings
+# ─────────────────────────────────────────────
+title: "Etienne Le Naour"
+description: >-
+  PhD in Deep Learning from Sorbonne University.
+  AI Research Scientist at EDF R&D, developing deep learning models
+  for temporal data.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Bio
-email:
-description: I hold a PhD in Deep Learning from Sorbonne University. 
-  I currently work as a research scientist at EDF R&D, where I develop innovative deep learning models for temporal data, 
-  focusing on applications in the energy sector. I am always eager to connect and discuss my research, feel free to reach out!
 github_username: EtienneLnr
-minimal_mistakes_skin: dirt 
+minimal_mistakes_skin: air
 search: true
 
-# Build settings
+# ─────────────────────────────────────────────
+#  Build Settings
+# ─────────────────────────────────────────────
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+timezone: Europe/Paris
+
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: Europe/Paris 
 
 include:
   - .htaccess
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-# Plugins (previously gems:)
-header:
-  custom:
-    - <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url }}">
-
+# ─────────────────────────────────────────────
+#  Plugins
+# ─────────────────────────────────────────────
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-include-cache
 
+# ─────────────────────────────────────────────
+#  Author
+# ─────────────────────────────────────────────
 author:
-  name   : "Etienne Le Naour"
-  avatar : "/assets/images/bio.jpeg"
-  bio    : "PhD in Deep Learning, AI Research Scientist at EDF Lab."
+  name: "Etienne Le Naour"
+  avatar: "/assets/images/bio.jpeg"
+  bio: "PhD in Deep Learning · AI Research Scientist at EDF Lab."
   links:
-    - label: "etienne.le-naour[at]edf.fr"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:etienne.le-naour_at_edf.fr?body=Replace _at_ with @"
+      url: "mailto:etienne.le-naour@edf.fr"
     - label: "Google Scholar"
-      icon: "fas fa-fw fa-link"
-      url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/EtienneLnr"
-    - label: "Resume"
-      icon: "fab fa-fw fa-envira"
-      url: 
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/etienne-le-naour/"
-
-footer:
-  links:
-    - label: "Scholar"
       icon: "ai ai-fw ai-google-scholar"
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/EtienneLnr"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/etienne-le-naour/"
+    - label: "Resume"
+      icon: "fas fa-fw fa-file-pdf"
+      url: ""
 
+# ─────────────────────────────────────────────
+#  Footer
+# ─────────────────────────────────────────────
+footer:
+  links:
+    - label: "Google Scholar"
+      icon: "ai ai-fw ai-google-scholar"
+      url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/EtienneLnr"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/etienne-le-naour/"
+
+# ─────────────────────────────────────────────
+#  Defaults
+# ─────────────────────────────────────────────
 defaults:
-  # _posts
   - scope:
       path: ""
-      type: research
+      type: posts
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
+      read_time: false
+      comments: false
+      share: false
+      related: false
   - scope:
       path: "_pages"
       type: pages
@@ -109,7 +94,9 @@ defaults:
       layout: single
       author_profile: true
 
-# Markdown Processing
+# ─────────────────────────────────────────────
+#  Markdown Processing
+# ─────────────────────────────────────────────
 kramdown:
   input: GFM
   hard_wrap: false
@@ -120,6 +107,9 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# ─────────────────────────────────────────────
+#  Archives
+# ─────────────────────────────────────────────
 category_archive:
   type: liquid
   path: /categories/
@@ -127,6 +117,9 @@ tag_archive:
   type: liquid
   path: /tags/
 
+# ─────────────────────────────────────────────
+#  Sass
+# ─────────────────────────────────────────────
 sass:
   sass_dir: _sass
   style: compressed
