@@ -67,7 +67,7 @@ header:
 
 
 <style>
-/* --- Page-specific enhancements --- */
+/* --- Page-specific enhancements ---  */
 
 /* Conteneur principal du thème Minimal */
 .page__content {
