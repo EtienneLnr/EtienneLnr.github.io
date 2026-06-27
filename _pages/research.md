@@ -31,7 +31,7 @@ header:
     <h2 class="rp-heading">Preprint</h2>
     <div class="rp-preprint">
       <div class="rp-preprint-body">
-        <span class="rp-ms-label rp-label--preprint">Preprint · 2025</span>
+        <span class="rp-ms-label rp-label--preprint">Preprint · 2026</span>
         <p class="rp-ms-title">TS-ICL: A Flexible Time-Indexed Foundation Model for Time Series via In-Context Learning</p>
         <p class="rp-ms-authors"><em>E. Le Naour*, T. Nabil*, A. Petralia</em></p>
       </div>
