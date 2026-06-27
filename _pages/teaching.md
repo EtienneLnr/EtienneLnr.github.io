@@ -12,8 +12,20 @@ header:
 <div class="teaching-block">
 
   <section class="tb-section">
-    <h2 class="tb-heading">Project Supervision</h2>
+    <h2 class="tb-heading">Academic Project Supervision</h2>
     <div class="tb-cards">
+
+      <div class="tb-card">
+        <div class="tb-card-body">
+          <span class="tb-topic">Time Series Completion with Covariates</span>
+          <span class="tb-meta">
+            <a href="https://www.ensae.fr/courses/1017-seminaire-de-modelisation-statistique">Statistics Modelisation Seminar</a>
+            &thinsp;·&thinsp;
+            <a href="https://www.ensae.fr">ENSAE Paris</a>
+          </span>
+        </div>
+        <span class="tb-year">2026</span>
+      </div>
 
       <div class="tb-card">
         <div class="tb-card-body">
@@ -27,18 +39,6 @@ header:
           </span>
         </div>
         <span class="tb-year">2025</span>
-      </div>
-
-      <div class="tb-card">
-        <div class="tb-card-body">
-          <span class="tb-topic">Time Series Completion with Covariates</span>
-          <span class="tb-meta">
-            <a href="https://www.ensae.fr/courses/1017-seminaire-de-modelisation-statistique">Statistics Modelisation Seminar</a>
-            &thinsp;·&thinsp;
-            <a href="https://www.ensae.fr">ENSAE Paris</a>
-          </span>
-        </div>
-        <span class="tb-year">2026</span>
       </div>
 
     </div>
