@@ -40,7 +40,7 @@ plugins:
 author:
   name: "Etienne Le Naour"
   avatar: "/assets/images/bio.jpeg"
-  bio: "PhD in Deep Learning · AI Research Scientist at EDF Lab."
+  bio: "AI Research Scientist in Deep Learning & Foundation Models"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
