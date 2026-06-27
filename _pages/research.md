@@ -17,13 +17,13 @@ header:
 <a href="https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf"> Manuscript (HAL)</a></p>
 </div>
 
-<!-- <div class="research-block">
+<div class="research-block">
 <h2>Preprint</h2>
 
-<p><strong>Are Time-Indexed Foundation Models the Future of Time Series Imputation?</strong><br>
-<em>E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua</em><br>
-<a href="https://arxiv.org/abs/2511.05980"> Paper (arXiv)</a></p>
-</div> -->
+<p><strong>TS-ICL: A Flexible Time-Indexed Foundation Model for Time Series via In-Context Learning</strong><br>
+<em>E. Le Naour*, T. Nabil*, A. Petralia </em><br>
+<a href="https://arxiv.org/pdf/2606.05878">paper</a> | <a href="https://github.com/EDF-Lab/ts-icl">code</a></li>
+</div>
 
 <div class="research-block">
 <h2>Publications</h2>
