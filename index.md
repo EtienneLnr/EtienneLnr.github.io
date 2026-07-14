@@ -25,7 +25,7 @@ header:
   <section class="bp-section bp-news">
     <h2 class="bp-heading">News</h2>
     <div class="bp-news-item">
-      <span class="bp-news-date">Jul 2026</span>
+      <span class="bp-news-date">June 2026</span>
       <p class="bp-news-text">
         🚀 Our paper <strong>TS-ICL</strong> is out — a flexible time-indexed foundation model for time series, 
         handling both <strong>imputation</strong> and <strong>forecasting</strong> via in-context learning.
