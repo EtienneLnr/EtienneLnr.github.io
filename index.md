@@ -21,6 +21,19 @@ header:
     </p>
   </section>
 
+  <!-- ══ News ══ -->
+  <section class="bp-section bp-news">
+    <h2 class="bp-heading">News</h2>
+    <div class="bp-news-item">
+      <span class="bp-news-date">Jul 2026</span>
+      <p class="bp-news-text">
+        🚀 Our paper <strong>TS-ICL</strong> is out — a flexible time-indexed foundation model for time series, 
+        handling both <strong>imputation</strong> and <strong>forecasting</strong> via in-context learning.
+        <a href="https://arxiv.org/pdf/2606.05878">paper ↗</a> · <a href="https://github.com/EDF-Lab/ts-icl">code ↗</a>
+      </p>
+    </div>
+  </section>
+
   <!-- ══ Research Interests ══ -->
   <section class="bp-section">
     <h2 class="bp-heading">Research Interests</h2>
@@ -120,6 +133,44 @@ header:
   border-left: 4px solid #2a4cff;
   background: #f5f7ff;
   border-radius: 0 8px 8px 0;
+}
+
+/* ── news ── */
+.bp-news { margin-bottom: 2.2rem; }
+
+.bp-news-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem 1.2rem;
+  background: #fff8f0;
+  border-left: 4px solid #ff8a2a;
+  border-radius: 0 8px 8px 0;
+}
+
+.bp-news-date {
+  flex-shrink: 0;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ff8a2a;
+  background: #ffe8d2;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  margin-top: 0.15rem;
+}
+
+.bp-news-text {
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.bp-news-text a {
+  font-weight: 600;
 }
 
 /* ── research interest tags ── */

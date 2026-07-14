@@ -14,7 +14,7 @@ header:
   <div class="tk-ledger">
 
     <div class="tk-row tk-row--featured">
-      <span class="tk-year">2025</span>
+      <span class="tk-year">2024</span>
       <div class="tk-content">
         <p class="tk-title">Learning Neural Representations for Time Series</p>
         <p class="tk-meta">Paris, France</p>
