@@ -3,14 +3,11 @@
 
   var root = document.documentElement;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
   /* ---------- Theme toggle ---------- */
 
-  function isDark() {
-    var t = root.getAttribute("data-theme");
-    return t ? t === "dark" : darkQuery.matches;
-  }
+  // Light is the default; dark only when chosen with the toggle.
+  function isDark() { return root.getAttribute("data-theme") === "dark"; }
 
   var themeListeners = [];
   function onThemeChange(fn) { themeListeners.push(fn); }
@@ -24,7 +21,6 @@
       emitTheme();
     });
   });
-  if (darkQuery.addEventListener) darkQuery.addEventListener("change", emitTheme);
 
   /* ---------- Header border on scroll ---------- */
 
@@ -123,16 +119,17 @@
   var last = 0;
 
   var NOW = 0.74;            // fraction of width where "now" (t0) sits
-  var GAP = [0.33, 0.43];    // missing-value window, as width fractions
+  var GAP = [0.31, 0.43];    // missing-value window, as width fractions
+  var STEP = 2;
 
   function readColors() {
     var s = getComputedStyle(root);
-    colors.obs = s.getPropertyValue("--signal-obs").trim();
-    colors.fc = s.getPropertyValue("--signal-fc").trim();
-    colors.band = s.getPropertyValue("--signal-band").trim();
-    colors.grid = s.getPropertyValue("--signal-grid").trim();
+    ["obs", "fc", "band", "area", "gap", "imp", "grid"].forEach(function (k) {
+      colors[k] = s.getPropertyValue("--signal-" + k).trim();
+    });
     colors.muted = s.getPropertyValue("--ink-3").trim();
     colors.bg = s.getPropertyValue("--bg").trim();
+    colors.font = s.getPropertyValue("--font-sans").trim();
   }
 
   function resize() {
@@ -145,12 +142,11 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
-  // Ground-truth signal (seasonal + faster components).
+  // Ground-truth signal: two seasonal components plus a little texture.
   function signal(t) {
     return 0.52 * Math.sin(0.9 * t)
       + 0.24 * Math.sin(2.3 * t + 1.1)
-      + 0.11 * Math.sin(5.3 * t + 2.0)
-      + 0.05 * Math.sin(11.7 * t + 0.4);
+      + 0.07 * Math.sin(5.3 * t + 2.0);
   }
   // What a model would "see": the smooth part only.
   function smooth(t) {
@@ -160,108 +156,122 @@
   function tAt(x) { return (x / W) * 11 + phase; }
 
   function yAt(v) {
-    var pad = 22;
-    return H / 2 - v * (H / 2 - pad) / 0.95;
+    var top = 26, bottom = 14;
+    return top + (1 - (v + 0.9) / 1.8) * (H - top - bottom);
   }
 
-  function strokePath(x0, x1, fn, step) {
-    ctx.beginPath();
-    for (var x = x0; x <= x1 + 0.01; x += step) {
-      var y = yAt(fn(x));
-      if (x === x0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+  function trace(x0, x1, fn, moveFirst) {
+    for (var x = x0; x <= x1 + 0.01; x += STEP) {
+      var xx = Math.min(x, x1), y = yAt(fn(xx));
+      if (x === x0 && moveFirst) ctx.moveTo(xx, y); else ctx.lineTo(xx, y);
     }
+  }
+  function strokePath(x0, x1, fn) {
+    ctx.beginPath();
+    trace(x0, x1, fn, true);
     ctx.stroke();
+  }
+  function fillUnder(x0, x1, fn, top, bottom) {
+    var g = ctx.createLinearGradient(0, top, 0, bottom);
+    g.addColorStop(0, colors.area);
+    g.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.moveTo(x0, bottom);
+    trace(x0, x1, fn, false);
+    ctx.lineTo(x1, bottom);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  function label(text, x, y, color, align) {
+    ctx.fillStyle = color;
+    ctx.font = '500 11px ' + (colors.font || "sans-serif");
+    ctx.textAlign = align || "left";
+    ctx.textBaseline = "top";
+    ctx.fillText(text, x, y);
+    ctx.textAlign = "left";
   }
 
   function draw() {
     if (!W || !H) return;
     ctx.clearRect(0, 0, W, H);
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
 
     var xNow = W * NOW;
     var gx0 = W * GAP[0], gx1 = W * GAP[1];
-    var step = 2;
-
-    // Grid
-    ctx.strokeStyle = colors.grid;
-    ctx.lineWidth = 1;
-    for (var i = 1; i < 4; i++) {
-      var gy = Math.round((H * i) / 4) + 0.5;
-      ctx.beginPath(); ctx.moveTo(0, gy); ctx.lineTo(W, gy); ctx.stroke();
-    }
-
     var obs = function (x) { return signal(tAt(x)); };
 
     // Forecast: smooth extrapolation anchored at the last observation.
     var tNow = tAt(xNow);
     var offset = signal(tNow) - smooth(tNow);
-    var decay = W * 0.06;
-    var fc = function (x) {
-      return smooth(tAt(x)) + offset * Math.exp(-(x - xNow) / decay);
-    };
-    var spread = function (x) { return 0.04 + 0.32 * Math.pow((x - xNow) / (W - xNow), 0.8); };
+    var decay = W * 0.05;
+    var fc = function (x) { return smooth(tAt(x)) + offset * Math.exp(-(x - xNow) / decay); };
+    var spread = function (x) { return 0.03 + 0.3 * Math.pow(Math.max(0, x - xNow) / (W - xNow), 0.75); };
 
-    // Uncertainty band
-    ctx.fillStyle = colors.band;
+    // Missing window: soft column + label
+    ctx.fillStyle = colors.gap;
     ctx.beginPath();
-    for (var x = xNow; x <= W; x += step) ctx.lineTo(x, yAt(fc(x) + spread(x)));
-    for (x = W; x >= xNow; x -= step) ctx.lineTo(x, yAt(fc(x) - spread(x)));
+    if (ctx.roundRect) ctx.roundRect(gx0, 4, gx1 - gx0, H - 8, 8); else ctx.rect(gx0, 4, gx1 - gx0, H - 8);
+    ctx.fill();
+    label("missing", (gx0 + gx1) / 2, 10, colors.muted, "center");
+
+    // Soft area under the observed history
+    fillUnder(0, xNow, obs, yAt(0.9), H);
+
+    // Uncertainty band, fading out to the right
+    var bandFade = ctx.createLinearGradient(xNow, 0, W, 0);
+    bandFade.addColorStop(0, colors.band);
+    bandFade.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = bandFade;
+    ctx.beginPath();
+    for (var x = xNow; x <= W; x += STEP) ctx.lineTo(x, yAt(fc(x) + spread(x)));
+    for (x = W; x >= xNow; x -= STEP) ctx.lineTo(x, yAt(fc(x) - spread(x)));
     ctx.closePath();
     ctx.fill();
 
-    ctx.lineJoin = "round";
-    ctx.lineCap = "round";
-
-    // Observed (two pieces around the gap)
+    // Observed series (around the gap)
     ctx.strokeStyle = colors.obs;
-    ctx.lineWidth = 1.75;
+    ctx.lineWidth = 2;
     ctx.setLineDash([]);
-    strokePath(0, gx0, obs, step);
-    strokePath(gx1, xNow, obs, step);
+    strokePath(0, gx0, obs);
+    strokePath(gx1, xNow, obs);
 
-    // Imputed gap: dotted reconstruction
-    ctx.strokeStyle = colors.muted;
-    ctx.lineWidth = 1.75;
-    ctx.setLineDash([1.5, 5]);
-    strokePath(gx0, gx1, obs, step);
+    // Imputed values in the gap
+    ctx.strokeStyle = colors.imp;
+    ctx.lineWidth = 2;
+    ctx.setLineDash([0.1, 5]);
+    strokePath(gx0, gx1, obs);
 
-    // Forecast line
-    ctx.strokeStyle = colors.fc;
-    ctx.lineWidth = 1.75;
-    ctx.setLineDash([6, 5]);
-    strokePath(xNow, W, fc, step);
-    ctx.setLineDash([]);
-
-    // Gap brackets
-    ctx.strokeStyle = colors.grid;
-    ctx.lineWidth = 1;
-    [gx0, gx1].forEach(function (gx) {
-      ctx.beginPath(); ctx.moveTo(Math.round(gx) + 0.5, 10); ctx.lineTo(Math.round(gx) + 0.5, H - 10); ctx.stroke();
-    });
-
-    // "Now" marker
-    ctx.strokeStyle = colors.muted;
-    ctx.globalAlpha = 0.5;
-    ctx.setLineDash([2, 4]);
-    ctx.beginPath(); ctx.moveTo(Math.round(xNow) + 0.5, 18); ctx.lineTo(Math.round(xNow) + 0.5, H - 4); ctx.stroke();
-    ctx.setLineDash([]);
-    ctx.globalAlpha = 1;
-
-    ctx.fillStyle = colors.muted;
-    ctx.font = '11px "Geist Mono", ui-monospace, monospace';
-    ctx.textBaseline = "top";
-    ctx.fillText("t₀", Math.round(xNow) + 6, 4);
-
-    var yNow = yAt(obs(xNow));
-    ctx.fillStyle = colors.bg;
-    ctx.beginPath(); ctx.arc(xNow, yNow, 4.5, 0, Math.PI * 2); ctx.fill();
+    // Forecast
     ctx.strokeStyle = colors.fc;
     ctx.lineWidth = 2;
-    ctx.beginPath(); ctx.arc(xNow, yNow, 4.5, 0, Math.PI * 2); ctx.stroke();
+    ctx.setLineDash([7, 6]);
+    strokePath(xNow, W, fc);
+    ctx.setLineDash([]);
 
-    // Fade the left edge into the page.
-    var fade = ctx.createLinearGradient(0, 0, W * 0.12, 0);
+    // "Now" marker
+    ctx.strokeStyle = colors.grid;
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(Math.round(xNow) + 0.5, 26); ctx.lineTo(Math.round(xNow) + 0.5, H); ctx.stroke();
+    label("now", xNow, 10, colors.muted, "center");
+
+    var yNow = yAt(obs(xNow));
+    ctx.fillStyle = colors.band;
+    ctx.beginPath(); ctx.arc(xNow, yNow, 9, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = colors.bg;
+    ctx.beginPath(); ctx.arc(xNow, yNow, 5, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = colors.fc;
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(xNow, yNow, 5, 0, Math.PI * 2); ctx.stroke();
+
+    // Fade both edges into the page.
+    var fade = ctx.createLinearGradient(0, 0, W, 0);
     fade.addColorStop(0, "rgba(0,0,0,0)");
-    fade.addColorStop(1, "rgba(0,0,0,1)");
+    fade.addColorStop(0.08, "rgba(0,0,0,1)");
+    fade.addColorStop(0.95, "rgba(0,0,0,1)");
+    fade.addColorStop(1, "rgba(0,0,0,0)");
     ctx.globalCompositeOperation = "destination-in";
     ctx.fillStyle = fade;
     ctx.fillRect(0, 0, W, H);
@@ -272,7 +282,7 @@
     if (!running) return;
     var dt = last ? Math.min((ts - last) / 1000, 0.1) : 0;
     last = ts;
-    phase += dt * 0.35;
+    phase += dt * 0.3;
     draw();
     requestAnimationFrame(frame);
   }
