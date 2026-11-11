@@ -11,8 +11,8 @@ Most content is plain YAML in `_data/`. Edit these files, no HTML needed:
 | `_data/news.yml` | News items (the home page shows the 5 most recent) |
 | `_data/publications.yml` | Papers. `selected: true` also shows a paper on the home page; optional `image` (thumbnail) and `bibtex` |
 | `_data/talks.yml` | Talks, posters, PhD defense |
-| `_data/supervision.yml` | PhD students (shown on the Teaching page; `/supervision/` redirects there) |
-| `_data/teaching.yml` | Student projects, TA positions, reviewing |
+| `_data/supervision.yml` | PhD students (Supervision page) |
+| `_data/teaching.yml` | Student projects (Supervision), TA positions (Teaching), reviewing (Reviewing) |
 | `_data/navigation.yml` | Top navigation |
 | `_config.yml` | Name, role, email, social links |
 
@@ -27,7 +27,7 @@ Link previews (LinkedIn, Slack...) use `assets/images/og.png` (1200×630).
 ```
 _layouts/   default.html (shell), page.html (inner pages)
 _includes/  head, header, footer, icons, publication entry, link pills
-_pages/     research, talk, teaching, 404
+_pages/     research, talk, supervision, teaching, reviewing, 404
 assets/css/main.css   all styles (color tokens at the top, light + dark)
 assets/js/main.js     theme toggle, publication filters, animated time series on the home page
 ```

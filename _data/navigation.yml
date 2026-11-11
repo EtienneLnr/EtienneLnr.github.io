@@ -3,5 +3,9 @@ main:
     url: /research/
   - title: "Talks"
     url: /talk/
+  - title: "Supervision"
+    url: /supervision/
   - title: "Teaching"
     url: /teaching/
+  - title: "Reviewing"
+    url: /reviewing/

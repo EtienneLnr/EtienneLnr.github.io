@@ -2,7 +2,7 @@
 #   type:     preprint | journal | conference | workshop
 #   selected: true  -> also shown on the home page
 #   award:    optional label shown as a badge
-#   image:    optional thumbnail (e.g. /assets/images/papers/ts-icl.png, ~16:10)
+#   image:    optional thumbnail (e.g. /assets/images/papers/ts-icl-arch.png, ~16:10)
 #   bibtex:   optional; adds a "bibtex" button that copies it
 # "E. Le Naour" is automatically highlighted in the author list.
 
@@ -12,7 +12,7 @@
   year: 2026
   type: conference
   selected: true
-  image: "/assets/images/papers/ts-icl.png"
+  image: "/assets/images/papers/ts-icl-arch.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2606.05878"
@@ -124,7 +124,7 @@
   year: 2024
   type: journal
   selected: true
-  image: "/assets/images/papers/timeflow.png"
+  image: "/assets/images/papers/timeflow-arch.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2306.05880"

@@ -55,7 +55,6 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-redirect-from
 
 # Link previews (LinkedIn, Slack, X...)
 twitter:
