@@ -1,5 +1,14 @@
 # Most recent first. `text` accepts inline HTML.
 # The home page shows the first 5 items.
+- date: "Nov 2026"
+  text: >-
+    I co-organized the workshop <strong>Transfer Learning and Time Series
+    Foundation Models</strong> (November 3–4, 2026, Palaiseau), where I also
+    gave a talk.
+  links:
+    - label: "website"
+      url: "https://ai-for-industry.fr"
+
 - date: "2026"
   text: >-
     <strong>TS-ICL</strong> is accepted at <strong>NeurIPS 2026</strong>: a
