@@ -1,11 +1,64 @@
 # Most recent first. `text` accepts inline HTML.
-- date: "June 2026"
+# The home page shows the first 5 items.
+- date: "2026"
   text: >-
-    Our preprint <strong>TS-ICL</strong> is out: a flexible time-indexed
-    foundation model for time series, handling both <strong>imputation</strong>
-    and <strong>forecasting</strong> via in-context learning.
+    <strong>TS-ICL</strong> is accepted at <strong>NeurIPS 2026</strong>: a
+    flexible time-indexed foundation model for time series, handling both
+    <strong>imputation</strong> and <strong>forecasting</strong> via in-context learning.
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2606.05878"
     - label: "code"
       url: "https://github.com/EDF-Lab/ts-icl"
+
+- date: "2026"
+  text: >-
+    <strong>LoaDiff</strong>, conditional generation of electricity consumption
+    time series, is accepted at <strong>IEEE ICDM 2026</strong>.
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2609.11639"
+
+- date: "2026"
+  text: >-
+    <strong>Are Time-Indexed Foundation Models the Future of Time Series
+    Imputation?</strong> is accepted at <strong>TMLR</strong>.
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2511.05980"
+
+- date: "2025"
+  text: >-
+    I started co-supervising two PhD students, Amine Razig and Gaspard Berthelier.
+  links:
+    - label: "supervision"
+      url: "/teaching/"
+
+- date: "2025"
+  text: >-
+    Presented <strong>MoTM</strong> at the AALTD workshop at ECML, Porto.
+  links:
+    - label: "slides"
+      url: "/assets/files/Prez_MOTM.pdf"
+
+- date: "2024"
+  text: >-
+    <strong>AROMA</strong> is accepted at <strong>NeurIPS 2024</strong>.
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2406.02176"
+
+- date: "2024"
+  text: >-
+    I defended my PhD, <strong>Learning Neural Representations for Time Series</strong>,
+    at Sorbonne University.
+  links:
+    - label: "video"
+      url: "https://www.youtube.com/watch?v=0KbYjcaSjf4"
+
+- date: "2023"
+  text: >-
+    <strong>Best Research Paper</strong> award at IEEE DSAA 2023.
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2310.16696"

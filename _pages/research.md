@@ -9,7 +9,6 @@ intro: "Papers on deep learning for time series: continuous modeling, imputation
   <button type="button" class="filter" data-filter="journal" aria-pressed="false">Journal</button>
   <button type="button" class="filter" data-filter="conference" aria-pressed="false">Conference</button>
   <button type="button" class="filter" data-filter="workshop" aria-pressed="false">Workshop</button>
-  <button type="button" class="filter" data-filter="preprint" aria-pressed="false">Preprint</button>
 </div>
 
 <div class="entries entries--filterable" data-filter-list>
@@ -18,10 +17,3 @@ intro: "Papers on deep learning for time series: continuous modeling, imputation
   {%- endfor %}
 </div>
 
-<div class="card card--feature card--spaced">
-  <p class="card__eyebrow">Doctoral thesis · Sorbonne University · 2024</p>
-  <p class="card__title">Learning Neural Representations for Time Series</p>
-  <div class="card__actions">
-    <a class="btn" href="https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf">Manuscript (HAL) {% include icon.html name="arrow" %}</a>
-  </div>
-</div>

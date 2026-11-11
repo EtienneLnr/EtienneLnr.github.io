@@ -40,7 +40,7 @@
   year: 2024
   type: poster
   links:
-    - label: "poster"
+    - label: "pdf"
       url: "/assets/files/Poster_TimeFlow.pdf"
 
 - title: "WindDragon: Enhancing Wind Power Forecasting with Automated Deep Learning"
@@ -50,5 +50,5 @@
   year: 2024
   type: poster
   links:
-    - label: "poster"
+    - label: "pdf"
       url: "/assets/files/Poster_WindDragon.pdf"

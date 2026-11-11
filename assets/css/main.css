@@ -320,6 +320,7 @@ a:hover { text-decoration-color: currentColor; }
 .btn .icon { width: 13px; height: 13px; }
 .btn:hover { transform: translateY(-1px); }
 .btn--ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+button.btn { font-family: inherit; cursor: pointer; }
 .btn--ghost:hover { border-color: var(--ink-3); }
 
 /* ---------- Hero (home) ---------- */
@@ -341,18 +342,17 @@ a:hover { text-decoration-color: currentColor; }
   line-height: 0.95;
   letter-spacing: -0.02em;
 }
-.hero__title em { font-style: italic; color: var(--accent); }
+.hero__title em { font-style: normal; color: var(--accent); }
 
 .hero__lead {
   max-width: 40em;
-  margin: 0 0 10px;
+  margin: 0 0 28px;
   font-size: clamp(17px, 1.6vw, 19px);
   line-height: 1.6;
   color: var(--ink-2);
 }
 .hero__lead em { font-style: normal; color: var(--ink); background: linear-gradient(transparent 62%, var(--accent-soft) 62%); }
 .hero__lead strong { color: var(--ink); font-weight: 500; }
-.hero__sub { margin: 0 0 26px; color: var(--ink-3); font-size: 15px; }
 
 .socials {
   display: flex;
@@ -478,26 +478,29 @@ a:hover { text-decoration-color: currentColor; }
   .section { grid-template-columns: 1fr; padding: 36px 0; }
 }
 
-.news { list-style: none; margin: 0; padding: 0; }
+.news { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .news__item {
-  padding: 20px 22px;
-  border-radius: var(--radius);
-  background: var(--surface);
-  border: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
 }
-.news__item + .news__item { margin-top: 12px; }
 .news__date {
-  display: inline-block;
-  margin-bottom: 8px;
+  padding-top: 3px;
   font-family: var(--font-mono);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--accent-ink);
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
+  white-space: nowrap;
 }
-.news__text { margin: 0 0 12px; color: var(--ink-2); }
-.news__text strong { color: var(--ink); font-weight: 600; }
-.news__links { display: flex; flex-wrap: wrap; gap: 6px; }
+.news__item:first-child .news__date { color: var(--accent-ink); }
+.news__text { margin: 0; color: var(--ink-2); text-wrap: pretty; }
+.news__text strong { color: var(--ink); font-weight: 500; }
+.news__links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+@media (max-width: 560px) {
+  .news__item { grid-template-columns: 1fr; gap: 4px; }
+}
 
 .interests {
   display: grid;
@@ -506,22 +509,23 @@ a:hover { text-decoration-color: currentColor; }
   margin: 0;
   padding: 0;
   list-style: none;
-  counter-reset: interest;
 }
 .interests li {
-  counter-increment: interest;
   display: flex;
-  gap: 14px;
+  gap: 12px;
   align-items: baseline;
   padding: 13px 0;
   border-top: 1px solid var(--line);
   font-size: 16px;
 }
 .interests li::before {
-  content: counter(interest, decimal-leading-zero);
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  color: var(--accent);
+  content: "";
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translateY(-2px);
 }
 @media (max-width: 560px) { .interests { grid-template-columns: 1fr; } }
 
@@ -548,7 +552,6 @@ a:hover { text-decoration-color: currentColor; }
     radial-gradient(120% 140% at 100% 0%, var(--accent-soft) 0%, transparent 55%),
     var(--surface);
 }
-.card--spaced { margin-top: 48px; }
 .card__eyebrow {
   margin: 0 0 8px;
   font-family: var(--font-mono);
@@ -573,14 +576,9 @@ a:hover { text-decoration-color: currentColor; }
   line-height: 1.25;
   letter-spacing: -0.01em;
 }
-.contact a {
-  display: inline-block;
-  margin-top: 6px;
-  font-family: var(--font-sans);
-  font-size: 16px;
-  letter-spacing: 0;
-  word-break: break-all;
-}
+.contact__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.contact__actions .btn { max-width: 100%; }
+.contact__actions .icon { width: 15px; height: 15px; }
 
 /* ---------- Entries (publications, talks) ---------- */
 
@@ -600,6 +598,7 @@ a:hover { text-decoration-color: currentColor; }
   font-size: 13px;
   color: var(--ink-3);
 }
+.entry__body { min-width: 0; }
 .entry__title {
   margin: 0 0 4px;
   font-size: 17px;
@@ -619,8 +618,59 @@ a:hover { text-decoration-color: currentColor; }
 
 .entry--award .entry__year { color: var(--warm); }
 
+.entry--media { grid-template-columns: 56px minmax(0, 1fr) 168px; }
+.entry__thumb {
+  width: 168px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.pill--btn { font: inherit; font-family: var(--font-mono); font-size: 12px; cursor: pointer; }
+.pill--btn[aria-expanded="true"] { color: var(--accent-ink); border-color: var(--accent); }
+
+.bibtex {
+  position: relative;
+  margin-top: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+}
+.bibtex pre {
+  margin: 0;
+  padding: 14px 16px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.bibtex__copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.bibtex__copy:hover { color: var(--ink); border-color: var(--ink-3); }
+
+@media (max-width: 760px) {
+  .entry--media { grid-template-columns: 56px minmax(0, 1fr); }
+  .entry--media .entry__body { grid-column: 2; grid-row: 2; }
+  .entry--media .entry__thumb { grid-column: 2; grid-row: 1; width: 100%; max-width: 320px; margin-bottom: 6px; }
+}
 @media (max-width: 560px) {
-  .entry { grid-template-columns: 1fr; gap: 4px; }
+  .entry, .entry--media { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .entry--media .entry__body { grid-column: auto; grid-row: auto; }
+  .entry--media .entry__thumb { grid-column: auto; grid-row: auto; order: -1; margin-bottom: 8px; }
   .entry__year { padding-top: 0; }
 }
 
@@ -707,7 +757,7 @@ a:hover { text-decoration-color: currentColor; }
 
 .review-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
 }
 .review {

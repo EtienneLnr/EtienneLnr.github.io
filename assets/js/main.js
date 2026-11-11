@@ -55,6 +55,39 @@
     });
   }
 
+  /* ---------- Copy to clipboard (BibTeX, email) ---------- */
+
+  function copyText(text, btn) {
+    var label = btn.textContent;
+    var done = function (ok) {
+      btn.textContent = ok ? "Copied ✓" : "Press ⌘C / Ctrl+C";
+      setTimeout(function () { btn.textContent = label; }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+    } else {
+      done(false);
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+    var toggle = e.target.closest("[data-bibtex-toggle]");
+    if (toggle) {
+      var panel = toggle.closest(".entry__body").querySelector("[data-bibtex]");
+      var open = panel.hidden;
+      panel.hidden = !open;
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      return;
+    }
+    var copyBib = e.target.closest("[data-bibtex-copy]");
+    if (copyBib) {
+      copyText(copyBib.parentNode.querySelector("code").textContent, copyBib);
+      return;
+    }
+    var copy = e.target.closest("[data-copy]");
+    if (copy) copyText(copy.getAttribute("data-copy"), copy);
+  });
+
   /* ---------- Reveal on scroll ---------- */
 
   if (!reduceMotion && "IntersectionObserver" in window) {

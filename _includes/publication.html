@@ -1,5 +1,5 @@
 {%- assign p = include.pub -%}
-<article class="entry{% if p.award %} entry--award{% endif %}">
+<article class="entry{% if p.award %} entry--award{% endif %}{% if p.image %} entry--media{% endif %}">
   <span class="entry__year">{{ p.year }}</span>
   <div class="entry__body">
     <h3 class="entry__title">{{ p.title }}</h3>
@@ -8,6 +8,16 @@
       <span class="tag tag--{{ p.type }}">{{ p.venue }}</span>
       {%- if p.award %}<span class="tag tag--award">★ {{ p.award }}</span>{% endif %}
       {% include links.html links=p.links %}
+      {%- if p.bibtex %}<button type="button" class="pill pill--btn" data-bibtex-toggle aria-expanded="false">bibtex</button>{% endif %}
     </div>
+    {%- if p.bibtex %}
+    <div class="bibtex" data-bibtex hidden>
+      <pre><code>{{ p.bibtex | strip | escape }}</code></pre>
+      <button type="button" class="bibtex__copy" data-bibtex-copy>Copy</button>
+    </div>
+    {%- endif %}
   </div>
+  {%- if p.image %}
+  <img class="entry__thumb" src="{{ p.image | relative_url }}" alt="" loading="lazy">
+  {%- endif %}
 </article>

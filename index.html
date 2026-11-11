@@ -4,15 +4,17 @@ title: "Etienne Le Naour"
 ---
 <section class="hero wrap">
   <div class="hero__text">
-    <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>{{ site.author.role }} · {{ site.author.affiliation }}</p>
+    <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>{{ site.author.role }}</p>
     <h1 class="hero__title">Etienne <em>Le&nbsp;Naour</em></h1>
     <p class="hero__lead">
-      I build deep learning models for <em>time series and temporal data</em>:
-      neural architectures that capture complex temporal dependencies, from
-      <strong>forecasting</strong> and <strong>imputation</strong> to
-      <strong>representation learning</strong> and <strong>foundation models</strong>.
+      I work on <em>foundation models for time series</em>: pretraining models
+      that learn general-purpose representations of temporal data, and making
+      them adapt to new series and tasks at inference time, through in-context
+      learning rather than retraining. My research spans
+      <strong>representation learning</strong>, <strong>continuous-time models</strong>
+      and their use for <strong>forecasting</strong>, <strong>imputation</strong>,
+      <strong>classification</strong> and other downstream tasks.
     </p>
-    <p class="hero__sub">PhD in Deep Learning, Sorbonne University.</p>
     <ul class="socials">
       {%- for link in site.author.links %}
       <li><a class="social" href="{{ link.url }}">{% include icon.html name=link.icon %}<span>{{ link.label }}</span></a></li>
@@ -41,11 +43,13 @@ title: "Etienne Le Naour"
     <h2 class="section__label">News</h2>
     <div class="section__body">
       <ul class="news">
-        {%- for item in site.data.news %}
+        {%- for item in site.data.news limit: 5 %}
         <li class="news__item">
           <span class="news__date">{{ item.date }}</span>
-          <p class="news__text">{{ item.text }}</p>
-          {%- if item.links %}<div class="news__links">{% include links.html links=item.links %}</div>{% endif %}
+          <div class="news__body">
+            <p class="news__text">{{ item.text }}</p>
+            {%- if item.links %}<div class="news__links">{% include links.html links=item.links %}</div>{% endif %}
+          </div>
         </li>
         {%- endfor %}
       </ul>
@@ -97,10 +101,11 @@ title: "Etienne Le Naour"
   <section class="section">
     <h2 class="section__label">Contact</h2>
     <div class="section__body">
-      <p class="contact">
-        Always open to discussions about research and collaboration.
-        <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-      </p>
+      <p class="contact">Always open to discussions about research and collaboration.</p>
+      <div class="contact__actions">
+        <a class="btn" href="mailto:{{ site.author.email }}">{% include icon.html name="mail" %}{{ site.author.email }}</a>
+        <button type="button" class="btn btn--ghost" data-copy="{{ site.author.email }}">Copy address</button>
+      </div>
     </div>
   </section>
 

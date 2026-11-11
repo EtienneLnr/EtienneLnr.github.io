@@ -2,19 +2,44 @@
 #   type:     preprint | journal | conference | workshop
 #   selected: true  -> also shown on the home page
 #   award:    optional label shown as a badge
+#   image:    optional thumbnail (e.g. /assets/images/papers/ts-icl.png, ~16:10)
+#   bibtex:   optional; adds a "bibtex" button that copies it
 # "E. Le Naour" is automatically highlighted in the author list.
 
 - title: "TS-ICL: A Flexible Time-Indexed Foundation Model for Time Series via In-Context Learning"
   authors: "E. Le Naour*, T. Nabil*, A. Petralia"
-  venue: "Preprint"
+  venue: "NeurIPS"
   year: 2026
-  type: preprint
+  type: conference
   selected: true
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2606.05878"
     - label: "code"
       url: "https://github.com/EDF-Lab/ts-icl"
+  bibtex: |
+    @inproceedings{lenaour2026tsicl,
+      title     = {{TS-ICL}: A Flexible Time-Indexed Foundation Model for Time Series via In-Context Learning},
+      author    = {Le Naour, Etienne and Nabil, Tahar and Petralia, Adrien},
+      booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+      year      = {2026}
+    }
+
+- title: "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics"
+  authors: "M. Baranova, A. Petralia, E. Le Naour, N. Etourneau, G. Hofmann, T. Palpanas"
+  venue: "IEEE ICDM"
+  year: 2026
+  type: conference
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2609.11639"
+  bibtex: |
+    @inproceedings{baranova2026loadiff,
+      title     = {{LoaDiff}: Conditional Generation of Electricity Consumption Time Series for Energy Analytics},
+      author    = {Baranova, Mariia and Petralia, Adrien and Le Naour, Etienne and Etourneau, Nathan and Hofmann, Guillaume and Palpanas, Themis},
+      booktitle = {IEEE International Conference on Data Mining (ICDM)},
+      year      = {2026}
+    }
 
 - title: "Are Time-Indexed Foundation Models the Future of Time Series Imputation?"
   authors: "E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua"
@@ -27,6 +52,29 @@
       url: "https://arxiv.org/pdf/2511.05980"
     - label: "code"
       url: "https://github.com/taharnbl/tsfm_imputation"
+  bibtex: |
+    @article{lenaour2026timeindexed,
+      title   = {Are Time-Indexed Foundation Models the Future of Time Series Imputation?},
+      author  = {Le Naour, Etienne and Nabil, Tahar and Petralia, Adrien and Agoua, Ghislain},
+      journal = {Transactions on Machine Learning Research},
+      year    = {2026}
+    }
+
+- title: "Investigating Simple Target-Covariate Relationships for Chronos-2 and TabPFN-TS"
+  authors: "G. Berthelier, M. Baranova, A.-T. Pantea, E. Le Naour, A. Petralia, T. Nabil, T. Palpanas"
+  venue: "ICLR Workshop, TSALM"
+  year: 2026
+  type: workshop
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2605.12200"
+  bibtex: |
+    @inproceedings{berthelier2026covariates,
+      title     = {Investigating Simple Target-Covariate Relationships for {Chronos-2} and {TabPFN-TS}},
+      author    = {Berthelier, Gaspard and Baranova, Mariia and Pantea, Andrei-Tiberiu and Le Naour, Etienne and Petralia, Adrien and Nabil, Tahar and Palpanas, Themis},
+      booktitle = {ICLR 2026 Workshop on Time Series in the Age of Large Models (TSALM)},
+      year      = {2026}
+    }
 
 - title: "MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling"
   authors: "E. Le Naour*, T. Nabil*, G. Agoua"
@@ -38,6 +86,13 @@
       url: "https://arxiv.org/abs/2507.13207"
     - label: "code"
       url: "https://github.com/EtienneLnr/MoTM"
+  bibtex: |
+    @inproceedings{lenaour2025motm,
+      title     = {{MoTM}: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling},
+      author    = {Le Naour, Etienne and Nabil, Tahar and Agoua, Ghislain},
+      booktitle = {ECML PKDD Workshop on Advanced Analytics and Learning on Temporal Data (AALTD)},
+      year      = {2025}
+    }
 
 - title: "AROMA: Preserving Spatial Structure for Latent PDE Modeling with Local Neural Fields"
   authors: "L. Serrano, T.X. Wang, E. Le Naour, J.N. Vittaut, P. Gallinari"
@@ -49,6 +104,13 @@
       url: "https://arxiv.org/pdf/2406.02176"
     - label: "code"
       url: "https://github.com/LouisSerrano/aroma"
+  bibtex: |
+    @inproceedings{serrano2024aroma,
+      title     = {{AROMA}: Preserving Spatial Structure for Latent {PDE} Modeling with Local Neural Fields},
+      author    = {Serrano, Louis and Wang, Thomas X. and Le Naour, Etienne and Vittaut, Jean-No{\"e}l and Gallinari, Patrick},
+      booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+      year      = {2024}
+    }
 
 - title: "Time Series Continuous Modeling for Imputation and Forecasting with Implicit Neural Representations"
   authors: "E. Le Naour, L. Serrano, L. Migus, Y. Yin, G. Agoua, N. Baskiotis, P. Gallinari, V. Guigue"
@@ -61,6 +123,13 @@
       url: "https://arxiv.org/pdf/2306.05880"
     - label: "code"
       url: "https://github.com/EtienneLnr/TimeFlow"
+  bibtex: |
+    @article{lenaour2024timeflow,
+      title   = {Time Series Continuous Modeling for Imputation and Forecasting with Implicit Neural Representations},
+      author  = {Le Naour, Etienne and Serrano, Louis and Migus, L{\'e}on and Yin, Yuan and Agoua, Ghislain and Baskiotis, Nicolas and Gallinari, Patrick and Guigue, Vincent},
+      journal = {Transactions on Machine Learning Research},
+      year    = {2024}
+    }
 
 - title: "WindDragon: Enhancing Wind Power Forecasting with Automated Deep Learning"
   authors: "J. Keisler, E. Le Naour"
@@ -70,6 +139,13 @@
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2402.14385"
+  bibtex: |
+    @inproceedings{keisler2024winddragon,
+      title     = {{WindDragon}: Enhancing Wind Power Forecasting with Automated Deep Learning},
+      author    = {Keisler, Julie and Le Naour, Etienne},
+      booktitle = {ICLR 2024 Workshop on Tackling Climate Change with Machine Learning},
+      year      = {2024}
+    }
 
 - title: "Interpretable Time Series Neural Representation for Classification Purposes"
   authors: "E. Le Naour, G. Agoua, N. Baskiotis, V. Guigue"
@@ -82,3 +158,10 @@
       url: "https://arxiv.org/pdf/2310.16696"
     - label: "code"
       url: "https://github.com/EtienneLnr/InterpretableTSRepresentation"
+  bibtex: |
+    @inproceedings{lenaour2023interpretable,
+      title     = {Interpretable Time Series Neural Representation for Classification Purposes},
+      author    = {Le Naour, Etienne and Agoua, Ghislain and Baskiotis, Nicolas and Guigue, Vincent},
+      booktitle = {IEEE International Conference on Data Science and Advanced Analytics (DSAA)},
+      year      = {2023}
+    }

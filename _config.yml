@@ -3,7 +3,7 @@
 # ─────────────────────────────────────────────
 title: "Etienne Le Naour"
 description: >-
-  AI Research Scientist at EDF R&D. PhD in Deep Learning from Sorbonne
+  AI Research Scientist. PhD in Deep Learning from Sorbonne
   University. Deep learning and foundation models for time series.
 url: "https://etiennelnr.github.io"
 baseurl: ""
@@ -16,7 +16,6 @@ timezone: Europe/Paris
 author:
   name: "Etienne Le Naour"
   role: "AI Research Scientist"
-  affiliation: "EDF R&D"
   location: "Paris, France"
   avatar: "/assets/images/bio.jpeg"
   email: "etiennelenaour09@gmail.com"
@@ -56,9 +55,15 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Link previews (LinkedIn, Slack, X...)
+twitter:
+  card: summary_large_image
 
 defaults:
   - scope:
       path: ""
     values:
       layout: page
+      image: /assets/images/og.png
