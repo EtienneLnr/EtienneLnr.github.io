@@ -1,0 +1,13 @@
+{%- assign p = include.pub -%}
+<article class="entry{% if p.award %} entry--award{% endif %}">
+  <span class="entry__year">{{ p.year }}</span>
+  <div class="entry__body">
+    <h3 class="entry__title">{{ p.title }}</h3>
+    <p class="entry__meta">{{ p.authors | replace: "E. Le Naour", "<b>E. Le Naour</b>" }}</p>
+    <div class="entry__foot">
+      <span class="tag tag--{{ p.type }}">{{ p.venue }}</span>
+      {%- if p.award %}<span class="tag tag--award">★ {{ p.award }}</span>{% endif %}
+      {% include links.html links=p.links %}
+    </div>
+  </div>
+</article>

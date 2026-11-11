@@ -1,0 +1,54 @@
+# Talks & posters, most recent first.
+#   type: defense | talk | poster
+#   url fields starting with "/" are files hosted on this site.
+
+- title: "MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling"
+  event: "ECML, AALTD"
+  event_url: "https://ecml-aaltd.github.io/aaltd2025/"
+  place: "Porto, Portugal"
+  year: 2025
+  type: talk
+  links:
+    - label: "slides"
+      url: "/assets/files/Prez_MOTM.pdf"
+
+- title: "Learning Neural Representations for Time Series"
+  event: "PhD Defense, Sorbonne University"
+  place: "Paris, France"
+  year: 2024
+  type: defense
+  links:
+    - label: "slides"
+      url: "/assets/files/PhD_defense.pdf"
+    - label: "video"
+      url: "https://www.youtube.com/watch?v=0KbYjcaSjf4"
+
+- title: "Interpretable Time Series Neural Representation for Classification Purposes"
+  event: "IEEE DSAA"
+  event_url: "https://conferences.sigappfr.org/dsaa2023/"
+  place: "Thessaloniki, Greece"
+  year: 2024
+  type: talk
+  links:
+    - label: "slides"
+      url: "/assets/files/Prez_DSAA.pdf"
+
+- title: "Time Series Continuous Modeling with Implicit Neural Representations"
+  event: "CAp 2024"
+  event_url: "https://caprfiap2024.sciencesconf.org"
+  place: "Lille, France"
+  year: 2024
+  type: poster
+  links:
+    - label: "poster"
+      url: "/assets/files/Poster_TimeFlow.pdf"
+
+- title: "WindDragon: Enhancing Wind Power Forecasting with Automated Deep Learning"
+  event: "ICLR 2024"
+  event_url: "https://iclr.cc/Conferences/2024"
+  place: "Vienna, Austria"
+  year: 2024
+  type: poster
+  links:
+    - label: "poster"
+      url: "/assets/files/Poster_WindDragon.pdf"

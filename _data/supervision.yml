@@ -1,0 +1,9 @@
+phd:
+  - name: "Amine Razig"
+    topic: "Deep Learning for Spatio-Temporal Aggregation in Weather Forecasting"
+    years: "2025–2028"
+
+  - name: "Gaspard Berthelier"
+    url: "https://3gaspo.github.io"
+    topic: "Federated Learning for Time Series"
+    years: "2025–2028"

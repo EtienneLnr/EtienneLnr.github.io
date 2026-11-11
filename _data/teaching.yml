@@ -1,0 +1,39 @@
+projects:
+  - topic: "Time Series Completion with Covariates"
+    course: "Statistics Modelisation Seminar"
+    course_url: "https://www.ensae.fr/courses/1017-seminaire-de-modelisation-statistique"
+    school: "ENSAE Paris"
+    school_url: "https://www.ensae.fr"
+    year: 2026
+
+  - topic: "Few-Shot Learning for Time Series Classification in the Energy Domain"
+    course: "Applied Statistics Projects"
+    course_url: "https://www.ensae.fr/courses/1408-groupe-de-statistique-appliquee"
+    school: "ENSAE Paris"
+    school_url: "https://www.ensae.fr"
+    project_url: "https://github.com/EtienneLnr/StatApp_ENSAE"
+    year: 2025
+
+assistant:
+  school: "ENSAE Paris"
+  school_url: "https://www.ensae.fr"
+  courses:
+    - name: "Numerical Analysis and Applications"
+      year: 2022
+    - name: "Introduction to Stochastic Processes"
+      url: "https://www.ensae.fr/courses/4432-introduction-aux-processus"
+      year: 2021
+
+reviewing:
+  - venue: "ICLR"
+    url: "https://iclr.cc"
+    years: [2024, 2025, 2026]
+  - venue: "TMLR"
+    url: "https://jmlr.org/tmlr/"
+    years: [2024, 2025, 2026]
+  - venue: "NeurIPS"
+    url: "https://neurips.cc"
+    years: [2023, 2026]
+  - venue: "ICML"
+    url: "https://icml.cc"
+    years: [2024]

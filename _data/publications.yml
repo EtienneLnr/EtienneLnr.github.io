@@ -1,0 +1,84 @@
+# Publications, most recent first.
+#   type:     preprint | journal | conference | workshop
+#   selected: true  -> also shown on the home page
+#   award:    optional label shown as a badge
+# "E. Le Naour" is automatically highlighted in the author list.
+
+- title: "TS-ICL: A Flexible Time-Indexed Foundation Model for Time Series via In-Context Learning"
+  authors: "E. Le Naour*, T. Nabil*, A. Petralia"
+  venue: "Preprint"
+  year: 2026
+  type: preprint
+  selected: true
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2606.05878"
+    - label: "code"
+      url: "https://github.com/EDF-Lab/ts-icl"
+
+- title: "Are Time-Indexed Foundation Models the Future of Time Series Imputation?"
+  authors: "E. Le Naour*, T. Nabil*, A. Petralia, G. Agoua"
+  venue: "TMLR"
+  year: 2026
+  type: journal
+  selected: true
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2511.05980"
+    - label: "code"
+      url: "https://github.com/taharnbl/tsfm_imputation"
+
+- title: "MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling"
+  authors: "E. Le Naour*, T. Nabil*, G. Agoua"
+  venue: "ECML Workshop, AALTD"
+  year: 2025
+  type: workshop
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/abs/2507.13207"
+    - label: "code"
+      url: "https://github.com/EtienneLnr/MoTM"
+
+- title: "AROMA: Preserving Spatial Structure for Latent PDE Modeling with Local Neural Fields"
+  authors: "L. Serrano, T.X. Wang, E. Le Naour, J.N. Vittaut, P. Gallinari"
+  venue: "NeurIPS"
+  year: 2024
+  type: conference
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2406.02176"
+    - label: "code"
+      url: "https://github.com/LouisSerrano/aroma"
+
+- title: "Time Series Continuous Modeling for Imputation and Forecasting with Implicit Neural Representations"
+  authors: "E. Le Naour, L. Serrano, L. Migus, Y. Yin, G. Agoua, N. Baskiotis, P. Gallinari, V. Guigue"
+  venue: "TMLR"
+  year: 2024
+  type: journal
+  selected: true
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2306.05880"
+    - label: "code"
+      url: "https://github.com/EtienneLnr/TimeFlow"
+
+- title: "WindDragon: Enhancing Wind Power Forecasting with Automated Deep Learning"
+  authors: "J. Keisler, E. Le Naour"
+  venue: "ICLR Workshop, CCAI"
+  year: 2024
+  type: workshop
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2402.14385"
+
+- title: "Interpretable Time Series Neural Representation for Classification Purposes"
+  authors: "E. Le Naour, G. Agoua, N. Baskiotis, V. Guigue"
+  venue: "IEEE DSAA"
+  year: 2023
+  type: conference
+  award: "Best Research Paper"
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2310.16696"
+    - label: "code"
+      url: "https://github.com/EtienneLnr/InterpretableTSRepresentation"

@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p class="site-footer__copy">© {{ site.time | date: "%Y" }} {{ site.author.name }} · {{ site.author.location }}</p>
+    <ul class="socials socials--compact">
+      {%- for link in site.author.links %}
+      <li><a href="{{ link.url }}" aria-label="{{ link.label }}" title="{{ link.label }}">{% include icon.html name=link.icon %}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</footer>

@@ -1,7 +1,107 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+layout: default
+title: "Etienne Le Naour"
 ---
+<section class="hero wrap">
+  <div class="hero__text">
+    <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>{{ site.author.role }} · {{ site.author.affiliation }}</p>
+    <h1 class="hero__title">Etienne <em>Le&nbsp;Naour</em></h1>
+    <p class="hero__lead">
+      I build deep learning models for <em>time series and temporal data</em>:
+      neural architectures that capture complex temporal dependencies, from
+      <strong>forecasting</strong> and <strong>imputation</strong> to
+      <strong>representation learning</strong> and <strong>foundation models</strong>.
+    </p>
+    <p class="hero__sub">PhD in Deep Learning, Sorbonne University.</p>
+    <ul class="socials">
+      {%- for link in site.author.links %}
+      <li><a class="social" href="{{ link.url }}">{% include icon.html name=link.icon %}<span>{{ link.label }}</span></a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+  <figure class="hero__photo">
+    <img src="{{ site.author.avatar | relative_url }}" alt="Portrait of {{ site.author.name }}" width="511" height="678">
+  </figure>
+</section>
+
+<div class="wrap">
+  <figure class="signal" aria-hidden="true">
+    <canvas class="signal__canvas" data-signal></canvas>
+    <figcaption class="signal__legend">
+      <span><i class="swatch swatch--obs"></i>observed</span>
+      <span><i class="swatch swatch--gap"></i>imputed</span>
+      <span><i class="swatch swatch--fc"></i>forecast</span>
+    </figcaption>
+  </figure>
+</div>
+
+<div class="wrap sections">
+
+  <section class="section">
+    <h2 class="section__label">News</h2>
+    <div class="section__body">
+      <ul class="news">
+        {%- for item in site.data.news %}
+        <li class="news__item">
+          <span class="news__date">{{ item.date }}</span>
+          <p class="news__text">{{ item.text }}</p>
+          {%- if item.links %}<div class="news__links">{% include links.html links=item.links %}</div>{% endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__label">Research interests</h2>
+    <div class="section__body">
+      <ul class="interests">
+        <li>Time series &amp; spatio-temporal modeling</li>
+        <li>Foundation models for time series</li>
+        <li>Large-scale pretraining &amp; inference adaptation</li>
+        <li>Representation &amp; self-supervised learning</li>
+        <li>Imputation &amp; forecasting</li>
+        <li>Scientific &amp; industrial AI applications</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__label">Selected work</h2>
+    <div class="section__body">
+      <div class="entries">
+        {%- assign selected = site.data.publications | where: "selected", true %}
+        {%- for pub in selected %}
+        {% include publication.html pub=pub %}
+        {%- endfor %}
+      </div>
+      <a class="more" href="{{ '/research/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__label">PhD thesis</h2>
+    <div class="section__body">
+      <div class="card card--feature">
+        <p class="card__eyebrow">Sorbonne University · 2024</p>
+        <p class="card__title">Learning Neural Representations for Time Series</p>
+        <div class="card__actions">
+          <a class="btn" href="https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf">Manuscript {% include icon.html name="arrow" %}</a>
+          <a class="btn btn--ghost" href="{{ '/assets/files/PhD_defense.pdf' | relative_url }}">Defense slides {% include icon.html name="arrow" %}</a>
+          <a class="btn btn--ghost" href="https://www.youtube.com/watch?v=0KbYjcaSjf4">Video {% include icon.html name="arrow" %}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__label">Contact</h2>
+    <div class="section__body">
+      <p class="contact">
+        Always open to discussions about research and collaboration.
+        <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      </p>
+    </div>
+  </section>
+
+</div>

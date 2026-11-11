@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M4 19c3 0 4-8 7-8s4 11 7 11 4-9 10-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand__name">{{ site.author.name }}</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      {%- for item in site.data.navigation.main %}
+      {%- assign active = false %}
+      {%- if page.url == item.url %}{% assign active = true %}{% endif %}
+      <a class="nav__link{% if active %} is-active{% endif %}" href="{{ item.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {%- endfor %}
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+        <span class="theme-toggle__sun">{% include icon.html name="sun" %}</span>
+        <span class="theme-toggle__moon">{% include icon.html name="moon" %}</span>
+      </button>
+    </nav>
+  </div>
+</header>

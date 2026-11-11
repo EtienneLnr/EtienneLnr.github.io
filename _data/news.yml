@@ -1,0 +1,11 @@
+# Most recent first. `text` accepts inline HTML.
+- date: "June 2026"
+  text: >-
+    Our preprint <strong>TS-ICL</strong> is out: a flexible time-indexed
+    foundation model for time series, handling both <strong>imputation</strong>
+    and <strong>forecasting</strong> via in-context learning.
+  links:
+    - label: "paper"
+      url: "https://arxiv.org/pdf/2606.05878"
+    - label: "code"
+      url: "https://github.com/EDF-Lab/ts-icl"

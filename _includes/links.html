@@ -1,0 +1,6 @@
+{%- comment -%} Renders a list of {label, url} as small pill links. Local paths ("/...") go through relative_url. {%- endcomment -%}
+{%- for link in include.links -%}
+  {%- assign first = link.url | slice: 0 -%}
+  {%- if first == "/" -%}{%- assign href = link.url | relative_url -%}{%- else -%}{%- assign href = link.url -%}{%- endif -%}
+  <a class="pill" href="{{ href }}">{{ link.label }}{% include icon.html name="arrow" %}</a>
+{%- endfor -%}

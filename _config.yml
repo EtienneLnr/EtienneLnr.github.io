@@ -1,125 +1,64 @@
 # ─────────────────────────────────────────────
-#  Site Settings
+#  Site
 # ─────────────────────────────────────────────
 title: "Etienne Le Naour"
 description: >-
-  PhD in Deep Learning from Sorbonne University.
-  AI Research Scientist at EDF R&D, developing deep learning models
-  for temporal data.
-
-github_username: EtienneLnr
-minimal_mistakes_skin: air
-search: true
-
-# ─────────────────────────────────────────────
-#  Build Settings
-# ─────────────────────────────────────────────
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes@4.26.2
+  AI Research Scientist at EDF R&D. PhD in Deep Learning from Sorbonne
+  University. Deep learning and foundation models for time series.
+url: "https://etiennelnr.github.io"
+baseurl: ""
+lang: en
 timezone: Europe/Paris
 
-permalink: /:categories/:title/
-
-include:
-  - .htaccess
-  - _pages
-
 # ─────────────────────────────────────────────
-#  Plugins
-# ─────────────────────────────────────────────
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# ─────────────────────────────────────────────
-#  Author
+#  Profile (used in the home page, header & footer)
 # ─────────────────────────────────────────────
 author:
   name: "Etienne Le Naour"
+  role: "AI Research Scientist"
+  affiliation: "EDF R&D"
+  location: "Paris, France"
   avatar: "/assets/images/bio.jpeg"
-  bio: "AI Research Scientist in Deep Learning & Foundation Models"
+  email: "etiennelenaour09@gmail.com"
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope"
+      icon: "mail"
       url: "mailto:etiennelenaour09@gmail.com"
     - label: "Google Scholar"
-      icon: "ai ai-fw ai-google-scholar"
+      icon: "scholar"
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "github"
       url: "https://github.com/EtienneLnr"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/etienne-le-naour/"
-    # - label: "Resume"
-    #   icon: "fas fa-fw fa-file-pdf"
-    #   url: ""
-
-# ─────────────────────────────────────────────
-#  Footer
-# ─────────────────────────────────────────────
-footer:
-  links:
-    - label: "Google Scholar"
-      icon: "ai ai-fw ai-google-scholar"
-      url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/EtienneLnr"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
+      icon: "linkedin"
       url: "https://www.linkedin.com/in/etienne-le-naour/"
 
 # ─────────────────────────────────────────────
-#  Defaults
+#  Build
 # ─────────────────────────────────────────────
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: false
-      share: false
-      related: false
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-# ─────────────────────────────────────────────
-#  Markdown Processing
-# ─────────────────────────────────────────────
+theme: null          # no theme: layouts/CSS live in this repo
+markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
   auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
 
-# ─────────────────────────────────────────────
-#  Archives
-# ─────────────────────────────────────────────
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+include:
+  - _pages
 
-# ─────────────────────────────────────────────
-#  Sass
-# ─────────────────────────────────────────────
-sass:
-  sass_dir: _sass
-  style: compressed
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page

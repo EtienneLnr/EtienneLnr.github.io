@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="wrap">
+  <header class="page-head">
+    {%- if page.kicker %}<p class="kicker">{{ page.kicker }}</p>{% endif %}
+    <h1 class="page-head__title">{{ page.title }}</h1>
+    {%- if page.intro %}<p class="page-head__intro">{{ page.intro }}</p>{% endif %}
+  </header>
+  <div class="page-body">
+    {{ content }}
+  </div>
+</div>

@@ -1,17 +1,10 @@
 source "https://rubygems.org"
 
+# Same versions as the GitHub Pages build (Jekyll 3.x + whitelisted plugins)
 gem "github-pages", group: :jekyll_plugins
 
-gem "tzinfo-data"
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+# Needed to run `jekyll serve` on Ruby 3+
+gem "webrick"
 
-# If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem "jekyll-paginate"
-  gem "jekyll-sitemap"
-  gem "jekyll-gist"
-  gem "jekyll-feed"
-  gem "jemoji"
-  gem "jekyll-include-cache"
-  gem "jekyll-algolia"
-end
+gem "tzinfo-data", platforms: [:windows, :jruby]
+gem "wdm", "~> 0.1.0", platforms: [:windows]
