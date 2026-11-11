@@ -1,6 +1,18 @@
 # Talks & posters, most recent first.
 #   type: defense | talk | poster
 #   url fields starting with "/" are files hosted on this site.
+#   with: optional co-speakers
+
+- title: "Introduction to Deep Learning and Foundation Models for Time Series: Towards Better Generalization at Inference"
+  event: "Transfer Learning and Time Series Foundation Models workshop"
+  event_url: "https://ai-for-industry.fr"
+  place: "Palaiseau, France"
+  with: "T. Nabil and A. Petralia"
+  year: 2026
+  type: talk
+  links:
+    - label: "slides"
+      url: "/assets/files/Prez_TSFM_Intro.pdf"
 
 - title: "MoTM: Towards a Foundation Model for Time Series Imputation based on Continuous Modeling"
   event: "ECML, AALTD"

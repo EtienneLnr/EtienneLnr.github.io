@@ -8,8 +8,10 @@
   links:
     - label: "website"
       url: "https://ai-for-industry.fr"
+    - label: "slides"
+      url: "/assets/files/Prez_TSFM_Intro.pdf"
 
-- date: "2026"
+- date: "Sep 2026"
   text: >-
     <strong>TS-ICL</strong> is accepted at <strong>NeurIPS 2026</strong>: a
     flexible time-indexed foundation model for time series, handling both
@@ -20,7 +22,7 @@
     - label: "code"
       url: "https://github.com/EDF-Lab/ts-icl"
 
-- date: "2026"
+- date: "Aug 2026"
   text: >-
     <strong>LoaDiff</strong>, conditional generation of electricity consumption
     time series, is accepted at <strong>IEEE ICDM 2026</strong>.
@@ -28,7 +30,7 @@
     - label: "paper"
       url: "https://arxiv.org/pdf/2609.11639"
 
-- date: "2026"
+- date: "Jan 2026"
   text: >-
     <strong>Are Time-Indexed Foundation Models the Future of Time Series
     Imputation?</strong> is accepted at <strong>TMLR</strong>.
@@ -43,14 +45,14 @@
     - label: "supervision"
       url: "/supervision/"
 
-- date: "2025"
+- date: "Sep 2025"
   text: >-
     Presented <strong>MoTM</strong> at the AALTD workshop at ECML, Porto.
   links:
     - label: "slides"
       url: "/assets/files/Prez_MOTM.pdf"
 
-- date: "2024"
+- date: "Sep 2024"
   text: >-
     <strong>AROMA</strong> is accepted at <strong>NeurIPS 2024</strong>.
   links:
@@ -65,7 +67,7 @@
     - label: "video"
       url: "https://www.youtube.com/watch?v=0KbYjcaSjf4"
 
-- date: "2023"
+- date: "Oct 2023"
   text: >-
     <strong>Best Research Paper</strong> award at IEEE DSAA 2023.
   links:
