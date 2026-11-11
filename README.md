@@ -18,6 +18,8 @@ Most content is plain YAML in `_data/`. Edit these files, no HTML needed:
 
 The home page bio and research interests are in `index.html`.
 
+Paper thumbnails live in `assets/images/papers/` (PNG, ~800px wide, white background); reference one with `image:` in `_data/publications.yml`. The thesis card image is `assets/images/papers/thesis.png`.
+
 Link previews (LinkedIn, Slack...) use `assets/images/og.png` (1200×630).
 
 ## Structure

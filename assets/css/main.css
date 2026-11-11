@@ -327,9 +327,9 @@ button.btn { font-family: inherit; cursor: pointer; }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 260px;
-  gap: clamp(32px, 6vw, 80px);
-  align-items: end;
+  grid-template-columns: 168px minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 48px);
+  align-items: start;
   padding-top: clamp(40px, 8vw, 96px);
   padding-bottom: 28px;
 }
@@ -379,7 +379,8 @@ button.btn { font-family: inherit; cursor: pointer; }
 .social:hover { border-color: var(--ink-3); transform: translateY(-1px); }
 
 .hero__photo {
-  margin: 0;
+  order: -1;
+  margin: 36px 0 0;
   position: relative;
 }
 .hero__photo img {
@@ -401,7 +402,7 @@ button.btn { font-family: inherit; cursor: pointer; }
 
 @media (max-width: 760px) {
   .hero { grid-template-columns: 1fr; align-items: start; }
-  .hero__photo { order: -1; width: 112px; }
+  .hero__photo { width: 96px; margin-top: 0; }
   .hero__photo img { border-radius: 50%; aspect-ratio: 1; object-position: 50% 30%; }
   .hero__photo::after { border-radius: 50%; }
   .social span { display: none; }
@@ -441,7 +442,7 @@ button.btn { font-family: inherit; cursor: pointer; }
 
 /* ---------- Home sections ---------- */
 
-.sections { counter-reset: section; padding-bottom: 40px; }
+.sections { padding-bottom: 40px; }
 
 .section {
   display: grid;
@@ -453,7 +454,6 @@ button.btn { font-family: inherit; cursor: pointer; }
 .section:last-child { border-bottom: 0; }
 
 .section__label {
-  counter-increment: section;
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 400;
@@ -461,16 +461,6 @@ button.btn { font-family: inherit; cursor: pointer; }
   line-height: 1.1;
   letter-spacing: -0.01em;
 }
-.section__label::before {
-  content: counter(section, decimal-leading-zero);
-  display: block;
-  margin-bottom: 8px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--ink-3);
-  letter-spacing: 0.04em;
-}
-
 @media (min-width: 761px) {
   .section__label { position: sticky; top: 92px; align-self: start; }
 }
@@ -568,6 +558,17 @@ button.btn { font-family: inherit; cursor: pointer; }
   letter-spacing: -0.01em;
 }
 .card__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.card__media {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  margin-bottom: 22px;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  background: #fff;
+  border: 1px solid var(--line);
+}
 
 .contact {
   margin: 0;
@@ -618,14 +619,15 @@ button.btn { font-family: inherit; cursor: pointer; }
 
 .entry--award .entry__year { color: var(--warm); }
 
-.entry--media { grid-template-columns: 56px minmax(0, 1fr) 168px; }
+.entry--media { grid-template-columns: 56px minmax(0, 1fr) 208px; }
 .entry__thumb {
-  width: 168px;
+  width: 208px;
   aspect-ratio: 16 / 10;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 8px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line);
-  background: var(--surface);
+  background: #fff;
 }
 
 .pill--btn { font: inherit; font-family: var(--font-mono); font-size: 12px; cursor: pointer; }

@@ -12,6 +12,7 @@
   year: 2026
   type: conference
   selected: true
+  image: "/assets/images/papers/ts-icl.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2606.05878"
@@ -30,6 +31,7 @@
   venue: "IEEE ICDM"
   year: 2026
   type: conference
+  image: "/assets/images/papers/loadiff.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2609.11639"
@@ -47,6 +49,7 @@
   year: 2026
   type: journal
   selected: true
+  image: "/assets/images/papers/tsfm-imputation.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2511.05980"
@@ -65,6 +68,7 @@
   venue: "ICLR Workshop, TSALM"
   year: 2026
   type: workshop
+  image: "/assets/images/papers/chronos-tabpfn.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2605.12200"
@@ -81,6 +85,7 @@
   venue: "ECML Workshop, AALTD"
   year: 2025
   type: workshop
+  image: "/assets/images/papers/motm.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/abs/2507.13207"
@@ -99,6 +104,7 @@
   venue: "NeurIPS"
   year: 2024
   type: conference
+  image: "/assets/images/papers/aroma.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2406.02176"
@@ -118,6 +124,7 @@
   year: 2024
   type: journal
   selected: true
+  image: "/assets/images/papers/timeflow.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2306.05880"
@@ -136,6 +143,7 @@
   venue: "ICLR Workshop, CCAI"
   year: 2024
   type: workshop
+  image: "/assets/images/papers/winddragon.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2402.14385"
@@ -153,6 +161,7 @@
   year: 2023
   type: conference
   award: "Best Research Paper"
+  image: "/assets/images/papers/interpretable-ts.png"
   links:
     - label: "paper"
       url: "https://arxiv.org/pdf/2310.16696"
