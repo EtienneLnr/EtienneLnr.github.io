@@ -88,7 +88,7 @@ title: "Etienne Le Naour"
     <div class="section__body">
       <div class="card card--feature card--media">
         <img class="card__media" src="{{ '/assets/images/papers/thesis-repr.png' | relative_url }}" alt="A time series is encoded into a representation z and decoded back" loading="lazy">
-        <p class="card__eyebrow">Sorbonne University · 2024</p>
+        <p class="card__eyebrow">Sorbonne Université · 2024</p>
         <p class="card__title">Learning Neural Representations for Time Series</p>
         <div class="card__actions">
           <a class="btn" href="https://theses.hal.science/tel-04747432/file/143669_LE_NAOUR_2024_archivage.pdf">Manuscript {% include icon.html name="arrow" %}</a>
@@ -102,10 +102,10 @@ title: "Etienne Le Naour"
   <section class="section">
     <h2 class="section__label">Contact</h2>
     <div class="section__body">
-      <p class="contact">Always open to discussions about research and collaboration.</p>
+      {%- assign linkedin = site.author.links | where: "label", "LinkedIn" | first %}
+      <p class="contact">Always open to discussions about research and collaboration. Feel free to send me a message on LinkedIn.</p>
       <div class="contact__actions">
-        <a class="btn" href="mailto:{{ site.author.email }}">{% include icon.html name="mail" %}{{ site.author.email }}</a>
-        <button type="button" class="btn btn--ghost" data-copy="{{ site.author.email }}">Copy address</button>
+        <a class="btn" href="{{ linkedin.url }}">{% include icon.html name="linkedin" %}Message me on LinkedIn</a>
       </div>
     </div>
   </section>

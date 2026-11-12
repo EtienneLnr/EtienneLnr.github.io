@@ -14,7 +14,7 @@ Most content is plain YAML in `_data/`. Edit these files, no HTML needed:
 | `_data/supervision.yml` | PhD students (Supervision page) |
 | `_data/teaching.yml` | Student projects (Supervision), TA positions (Teaching), reviewing (Reviewing) |
 | `_data/navigation.yml` | Top navigation |
-| `_config.yml` | Name, role, email, social links |
+| `_config.yml` | Name, role, social links |
 
 The home page bio and research interests are in `index.html`.
 

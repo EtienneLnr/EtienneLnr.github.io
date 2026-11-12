@@ -4,7 +4,7 @@
 title: "Etienne Le Naour"
 description: >-
   AI Research Scientist. PhD in Deep Learning from Sorbonne
-  University. Deep learning and foundation models for time series.
+  Université. Deep learning and foundation models for time series.
 url: "https://etiennelnr.github.io"
 baseurl: ""
 lang: en
@@ -18,11 +18,7 @@ author:
   role: "AI Research Scientist"
   location: "Paris, France"
   avatar: "/assets/images/bio.jpeg"
-  email: "etiennelenaour09@gmail.com"
   links:
-    - label: "Email"
-      icon: "mail"
-      url: "mailto:etiennelenaour09@gmail.com"
     - label: "Google Scholar"
       icon: "scholar"
       url: "https://scholar.google.fr/citations?user=hkQJ3HAAAAAJ&hl=fr"

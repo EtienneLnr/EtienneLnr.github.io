@@ -51,7 +51,7 @@
     });
   }
 
-  /* ---------- Copy to clipboard (BibTeX, email) ---------- */
+  /* ---------- Copy to clipboard (BibTeX) ---------- */
 
   function copyText(text, btn) {
     var label = btn.textContent;
@@ -78,10 +78,7 @@
     var copyBib = e.target.closest("[data-bibtex-copy]");
     if (copyBib) {
       copyText(copyBib.parentNode.querySelector("code").textContent, copyBib);
-      return;
     }
-    var copy = e.target.closest("[data-copy]");
-    if (copy) copyText(copy.getAttribute("data-copy"), copy);
   });
 
   /* ---------- Reveal on scroll ---------- */
